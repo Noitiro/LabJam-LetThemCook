@@ -56,4 +56,16 @@ public class RecipeSearcher : MonoBehaviour
 
         return null;
     }
+
+
+    // Po podaniu sk³adnika zwraca nam receptê na niego
+    public RecipeSO ReturnIngredientRecipe(AlchemyEnums.Ingredients Ingredient)
+    {
+        foreach (var recipe in RecipeList)
+        {
+            if (recipe.Potion == Ingredient) return recipe;
+        }
+
+        return null;
+    }
 }
