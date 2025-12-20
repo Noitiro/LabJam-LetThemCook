@@ -15,6 +15,6 @@ MonoBehaviour:
   clientName: Thaddeus van der Weyden
   requestDescription: I need a way to dissolve large amount of iron rust of magical
     source.
-  requiredPotion: {fileID: 0}
+  requiredPotion: {fileID: 11400000, guid: 577aa959e165fd146b7a56e3c6fe2dfc, type: 2}
   goldReward: 320
   timeLimit: 30

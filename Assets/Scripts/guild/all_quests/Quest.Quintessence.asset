@@ -16,6 +16,6 @@ MonoBehaviour:
   requestDescription: Emissary of His Highness, Hegemon of whole continent and The
     Highest Ruler Under Heaven, Aurelian XXI, pays for cleanest essence needed for
     elixir.
-  requiredPotion: {fileID: 0}
+  requiredPotion: {fileID: 11400000, guid: 71fc19d7ccfd9ab48abfcc5f51003400, type: 2}
   goldReward: 3270
   timeLimit: 30

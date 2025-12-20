@@ -15,6 +15,6 @@ MonoBehaviour:
   clientName: Ignatius de la Mare
   requestDescription: I pay for most pure sublimation of salt. Will be used for ghost
     summoning, so quality is utmost importance.
-  requiredPotion: {fileID: 0}
+  requiredPotion: {fileID: 11400000, guid: 776a69c7d96109e4c905103b4e3391b9, type: 2}
   goldReward: 370
   timeLimit: 30

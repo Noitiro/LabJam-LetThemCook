@@ -15,6 +15,6 @@ MonoBehaviour:
   clientName: Kaelen Slag
   requestDescription: Preparing foundation for my Magnum Opus. In need of large amount
     of Materia Prima.
-  requiredPotion: {fileID: 0}
+  requiredPotion: {fileID: 11400000, guid: 573cb4329f1fd1c49b9d362452bb97e3, type: 2}
   goldReward: 350
   timeLimit: 30

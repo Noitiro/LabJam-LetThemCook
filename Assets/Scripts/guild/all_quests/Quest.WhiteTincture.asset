@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GuildQuestSO
   clientName: Isander Mote
   requestDescription: Jeweler looks for method to multiplicate silver.
-  requiredPotion: {fileID: 0}
+  requiredPotion: {fileID: 11400000, guid: d3b40e9a335cdfa4484e226df89ca706, type: 2}
   goldReward: 6980
   timeLimit: 30

@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GuildQuestSO
   clientName: Vermis Cinder
   requestDescription: Lost my Philosophers' Stone somewhere. Looking for new one.
-  requiredPotion: {fileID: 0}
+  requiredPotion: {fileID: 11400000, guid: b475718d8bdabe84692301b3c98b3467, type: 2}
   goldReward: 5360
   timeLimit: 30
