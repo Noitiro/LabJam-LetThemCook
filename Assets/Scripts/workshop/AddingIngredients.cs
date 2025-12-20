@@ -1,7 +1,9 @@
 using NUnit.Framework;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEditor.UIElements;
 using UnityEngine;
+using UnityEngine.UI;
 public class AddingIngredients : MonoBehaviour {
     [SerializeField] SelectedIngredients selectedIngredients;
     [SerializeField] RecipeSearcher recipeSearcher;
@@ -61,9 +63,12 @@ public class AddingIngredients : MonoBehaviour {
     }
 
     public void clearIngredients() {
-        //Destroy(itemSlot.GetComponentInChildren<GameObject>());
-       // Destroy(itemSlot1.GetComponentInChildren<GameObject>());
-      //  Destroy(itemSlot3.GetComponentInChildren<GameObject>());
+        Debug.Log(itemSlot.GetComponentInChildren<Image>());
+        Destroy(itemSlot.GetComponentInChildren<RectTransform>().gameObject.GetComponentInChildren<RectTransform>().gameObject);
+       // Debug.Log(itemSlot.GetComponentInChildren<AlchemyEnums.Ingredients>());
+        //Destroy(itemSlot.transform.GetChild(0).gameObject);
+       // Destroy(itemSlot1.transform.GetChild(0).gameObject);
+       // Destroy(itemSlot3.transform.GetChild(0).gameObject);
 
         ingredientsList.Clear();
     }
