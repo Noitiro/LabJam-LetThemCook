@@ -6,7 +6,9 @@ public class AlchemyEnums
     {
         Salt,
         Mercury,
-        Sulphur
+        Sulphur,
+
+        PurifiedSalt
     }
     public enum Instruments
     {

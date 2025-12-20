@@ -9,9 +9,14 @@ public class RecipeSO : ScriptableObject
     public Sprite icon;
     // Tu mo¿na color mikkstury niue ikone w sumie
 
-    public List<AlchemyEnums.Ingredients> ingredients;
+    // Sk³adniki potrzebne do stworzenia substancji
+    public List<AlchemyEnums.Ingredients> Ingredients;
 
-    public List<AlchemyEnums.Instruments> Instruments;
+    // Aparatura wykorzystana do stworzenia substancji
+    public AlchemyEnums.Instruments Instrument;
+
+    // Stworzona substancja
+    public AlchemyEnums.Ingredients Potion;
 
     public float cookTime = 2.0f;
 }
