@@ -4066,7 +4066,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AddingIngredients
   selectedIngredients: {fileID: 8552439009214244232}
-  recipeSearcher: {fileID: 0}
+  recipeSearcher: {fileID: 2854285089325090681}
   prefabSalt: {fileID: 8499557346003809048, guid: f87b7a7de104fa24e8e6620178f4f435, type: 3}
   prefabMercury: {fileID: 1287641751586122006, guid: c2735b7f06f9dcb43a58188c3499cde0, type: 3}
   prefabSulphur: {fileID: 8495096109828921356, guid: 498381a130f003f49bb9ed470a10ad60, type: 3}
@@ -5432,7 +5432,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AddingIngredients
   selectedIngredients: {fileID: 8552439009214244232}
-  recipeSearcher: {fileID: 0}
+  recipeSearcher: {fileID: 2854285089325090681}
   prefabSalt: {fileID: 8499557346003809048, guid: f87b7a7de104fa24e8e6620178f4f435, type: 3}
   prefabMercury: {fileID: 1287641751586122006, guid: c2735b7f06f9dcb43a58188c3499cde0, type: 3}
   prefabSulphur: {fileID: 8495096109828921356, guid: 498381a130f003f49bb9ed470a10ad60, type: 3}
@@ -5846,7 +5846,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AddingIngredients
   selectedIngredients: {fileID: 8552439009214244232}
-  recipeSearcher: {fileID: 0}
+  recipeSearcher: {fileID: 2854285089325090681}
   prefabSalt: {fileID: 8499557346003809048, guid: f87b7a7de104fa24e8e6620178f4f435, type: 3}
   prefabMercury: {fileID: 1287641751586122006, guid: c2735b7f06f9dcb43a58188c3499cde0, type: 3}
   prefabSulphur: {fileID: 8495096109828921356, guid: 498381a130f003f49bb9ed470a10ad60, type: 3}
