@@ -1,15 +1,22 @@
+using TMPro;
 using UnityEngine;
-using TMPro; 
 
 public class QuestCardUI : MonoBehaviour
 {
+    [Header("Elementy UI")]
     [SerializeField] private TextMeshProUGUI clientName;
     [SerializeField] private TextMeshProUGUI description;
     [SerializeField] private TextMeshProUGUI reward;
     [SerializeField] private TextMeshProUGUI potionName;
 
-    public void Setup(GuildQuestSO data)
+    private GuildQuestSO questData;
+    private QuestManager manager;
+
+    public void Setup(GuildQuestSO data, QuestManager managerRef)
     {
+        questData = data;
+        manager = managerRef;
+
         if (clientName != null)
             clientName.text = data.clientName;
 
@@ -21,5 +28,14 @@ public class QuestCardUI : MonoBehaviour
 
         if (potionName != null && data.requiredPotion != null)
             potionName.text = data.requiredPotion.recipeName;
+    }
+
+    public void OnClick()
+    {
+        if (manager != null && questData != null)
+        {
+            manager.AcceptQuest(questData);
+            Destroy(gameObject);
+        }
     }
 }
