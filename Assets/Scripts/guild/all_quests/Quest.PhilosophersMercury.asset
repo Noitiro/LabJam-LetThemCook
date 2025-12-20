@@ -10,97 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 82ef84a6ccbc18b459a27a7990b063ed, type: 3}
-  m_Name: Quest.BlueVitriol
+  m_Name: Quest.PhilosophersMercury
   m_EditorClassIdentifier: Assembly-CSharp::GuildQuestSO
-  clientName: Oberon Zephyr
-  requestDescription: 'Blue vitriol. Fast. Needed for headache.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-'
-  requiredPotion: {fileID: 11400000, guid: c462aa0d65fe4a94a9b4d84f93cac4f3, type: 2}
-  goldReward: 230
+  clientName: Cipher Glyph
+  requestDescription: In need of materials for magical symbol creation. It will be
+    used in swords and other weapons.
+  requiredPotion: {fileID: 0}
+  goldReward: 940
   timeLimit: 30

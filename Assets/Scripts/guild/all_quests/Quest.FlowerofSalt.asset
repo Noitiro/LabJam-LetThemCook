@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 82ef84a6ccbc18b459a27a7990b063ed, type: 3}
-  m_Name: Quest.FlowerofSalt
+  m_Name: Quest.FlowerOfSalt
   m_EditorClassIdentifier: Assembly-CSharp::GuildQuestSO
-  clientName: roman
-  requestDescription: Daj miksturke okok?
+  clientName: Valerius Thorn
+  requestDescription: Local plague doctor is in need of medical powders.
   requiredPotion: {fileID: 11400000, guid: d0d91e1a9d55e394b89c2a775730de4c, type: 2}
-  goldReward: 50
+  goldReward: 60
   timeLimit: 30

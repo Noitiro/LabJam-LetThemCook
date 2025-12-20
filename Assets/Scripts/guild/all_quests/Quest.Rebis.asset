@@ -10,97 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 82ef84a6ccbc18b459a27a7990b063ed, type: 3}
-  m_Name: Quest.OilofSulphurBlue
+  m_Name: Quest.Rebis
   m_EditorClassIdentifier: Assembly-CSharp::GuildQuestSO
-  clientName: AndrZrj
-  requestDescription: 'Daj miksturke ok?
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-'
-  requiredPotion: {fileID: 11400000, guid: cf47f3c9b0f179740ae9ce0c83ea9975, type: 2}
-  goldReward: 50
+  clientName: Ignifer Soot
+  requestDescription: Rats ate my reagents and experiment is in progress. Need more
+    of them without delay!
+  requiredPotion: {fileID: 0}
+  goldReward: 2380
   timeLimit: 30
