@@ -10,6 +10,7 @@ public class QuestManager : MonoBehaviour
     [SerializeField] private GameObject questCardPrefab;
     [SerializeField] private TextMeshProUGUI activeTimerText;
     [SerializeField] private List<GuildQuestSO> allQuests;
+    [SerializeField] private TextMeshProUGUI currentQuestNameText;
 
     public GuildQuestSO currentActiveQuest;
     private float timeRemaining;
@@ -21,6 +22,7 @@ public class QuestManager : MonoBehaviour
     private void Start()
     {
         if (activeTimerText != null) activeTimerText.gameObject.SetActive(false);
+        UpdateQuestHUD();
     }
     private void OnEnable()
     {
@@ -72,6 +74,7 @@ public class QuestManager : MonoBehaviour
         if (currentActiveQuest != null) return;
         currentActiveQuest = quest;
         timeRemaining = quest.timeLimit;
+        UpdateQuestHUD();
         Debug.Log(quest.requiredPotion.recipeName);
         if (activeTimerText != null) activeTimerText.gameObject.SetActive(true);
         foreach (Transform child in cardsContainer)
@@ -100,11 +103,25 @@ public class QuestManager : MonoBehaviour
             }
 
             currentActiveQuest = null;
+            UpdateQuestHUD();
             if (activeTimerText != null) activeTimerText.gameObject.SetActive(false);
         }
         else
         {
             Debug.Log("nie ta mikstura");
+        }
+    }
+    private void UpdateQuestHUD()
+    {
+        if (currentQuestNameText == null) return;
+
+        if (currentActiveQuest != null)
+        {
+            currentQuestNameText.text = $"Current Order: {currentActiveQuest.requiredPotion.recipeName}";
+        }
+        else
+        {
+            currentQuestNameText.text = "Visit the Guild for new quests";
         }
     }
 }

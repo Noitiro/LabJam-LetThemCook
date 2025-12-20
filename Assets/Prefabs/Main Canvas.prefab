@@ -1026,7 +1026,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1532250051208916649}
   m_HandleRect: {fileID: 551823849749241675}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -1853,6 +1853,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 47e90f1d0810b8c449f36bbea24359d6, type: 2}
   - {fileID: 11400000, guid: 78fe51f78e882da43be58eb3d1b372f8, type: 2}
   - {fileID: 11400000, guid: 78fe51f78e882da43be58eb3d1b372f8, type: 2}
+  currentQuestNameText: {fileID: 4961126584078486297}
   currentActiveQuest: {fileID: 0}
 --- !u!1 &2730311656552220042
 GameObject:
