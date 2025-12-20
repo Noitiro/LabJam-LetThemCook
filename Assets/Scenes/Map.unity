@@ -302,6 +302,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 2539182949385594299, guid: 5f60bd2318f3dfb40adc45b88506980e, type: 3}
+      propertyPath: m_Name
+      value: Top Panel
+      objectReference: {fileID: 0}
     - target: {fileID: 3745662906023039837, guid: 5f60bd2318f3dfb40adc45b88506980e, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
