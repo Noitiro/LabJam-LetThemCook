@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 
 public class RecipeSearcher : MonoBehaviour
 {
@@ -40,7 +41,7 @@ public class RecipeSearcher : MonoBehaviour
                 InputIngredients.Sort();
                 RecipeIngredients.Sort();
 
-                if(InputIngredients == RecipeIngredients)
+                if(InputIngredients.SequenceEqual(RecipeIngredients))
                 {
                     Debug.Log("XDDD");
 
