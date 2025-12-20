@@ -8,7 +8,31 @@ public class AlchemyEnums
         Mercury,
         Sulphur,
 
-        PurifiedSalt
+        SublimatedSulphur,
+        FlowerOfSalt,
+        EssenceOfSulphur,
+        SublimatedMercury,
+        SalAmmoniac,
+        GreenVitriol,
+        BlueVitriol,
+        OilOfSulphur,
+        SpiritOfSalt,
+        EssenceOfSalt,
+        StrongWater,
+        Kalomel,
+        RoyalWater,
+        PhilosophicalSulphur,
+        PhilosophersMercury,
+        Rebis,
+        Azoth,
+        VirginsMilk,
+        PrimalEssence,
+        PhilosophersStone,
+        WhiteTincture,
+        PotableGold,
+        Quintessence,
+        ElixirOfLife,
+        Alkahest
     }
     public enum Instruments
     {
