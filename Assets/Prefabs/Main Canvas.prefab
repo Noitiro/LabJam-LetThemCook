@@ -529,7 +529,7 @@ GameObject:
   - component: {fileID: 8631707287748019274}
   - component: {fileID: 1835160300320601699}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: MoneyDisplay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
