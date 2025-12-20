@@ -44,7 +44,10 @@ public class RecipeSearcher : MonoBehaviour
                 if(InputIngredients.SequenceEqual(RecipeIngredients))
                 {
                     Debug.Log("XDDD");
-
+                    if (QuestManager.Instance != null)
+                    {
+                        QuestManager.Instance.CheckQuestCompletion(recipe);
+                    }
                     Debug.Log(recipe.Potion);
                     return recipe.Potion;
                 }
