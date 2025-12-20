@@ -1,5 +1,6 @@
 using NUnit.Framework;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 public class AddingIngredients : MonoBehaviour {
     [SerializeField] SelectedIngredients selectedIngredients;
@@ -10,6 +11,10 @@ public class AddingIngredients : MonoBehaviour {
     [SerializeField] GameObject itemSlot;
     [SerializeField] GameObject itemSlot1;
     [SerializeField] GameObject itemSlot3;
+
+    GameObject ing1;
+    GameObject ing2;
+    GameObject ing3;
 
     List<AlchemyEnums.Ingredients> ingredientsList = new List<AlchemyEnums.Ingredients>();
 
@@ -33,20 +38,30 @@ public class AddingIngredients : MonoBehaviour {
 
     private void add(GameObject prefab, AlchemyEnums.Ingredients typ) {
         if (itemSlotEmpty) {
-            Instantiate(prefab, itemSlot.transform);
+            ing1 = Instantiate(prefab, itemSlot.transform);
             ingredientsList.Add(typ);
+            selectedIngredients.selectIng = null;
             Debug.Log("Put salt");
             itemSlotEmpty = false;
         } else if(itemSlotEmpty1) {
-            Instantiate(prefab, itemSlot1.transform);
+            ing2 = Instantiate(prefab, itemSlot1.transform);
             ingredientsList.Add(typ);
+            selectedIngredients.selectIng = null;
             Debug.Log("Put mercury");
             itemSlotEmpty1 = false;
         } else if (itemSlotEmpty2) {
-            Instantiate(prefab, itemSlot3.transform);
+            ing3 = Instantiate(prefab, itemSlot3.transform);
             ingredientsList.Add(typ);
+            selectedIngredients.selectIng = null;
             Debug.Log("Put sulphur");
             itemSlotEmpty2 = false;
         }
+    }
+
+    public void clearIngredients() {
+        Destroy(ing1);
+        Destroy(ing2);
+        Destroy(ing3);
+        ingredientsList.Clear();
     }
 }
