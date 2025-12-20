@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82ef84a6ccbc18b459a27a7990b063ed, type: 3}
   m_Name: Quest.OilofSulphur
   m_EditorClassIdentifier: Assembly-CSharp::GuildQuestSO
-  clientName: AndrZrj
-  requestDescription: 'Daj miksturke ok?
-
+  clientName: Quintus Blackwood
+  requestDescription: 'Need stong, caustic liquid. Send to local cementry. Excess
+    fare for discretion.
 
 
 
@@ -102,5 +102,5 @@ MonoBehaviour:
 
 '
   requiredPotion: {fileID: 11400000, guid: 0523b4a20261e714c8402b0c31e545b0, type: 2}
-  goldReward: 50
+  goldReward: 280
   timeLimit: 30
