@@ -17,7 +17,7 @@ public class ShopCardUI : MonoBehaviour
 
         if (nameText) nameText.text = data.upgradeName;
         if (descriptionText) descriptionText.text = data.description;
-        if (costText) costText.text = data.cost.ToString() + " $";
+        if (costText) costText.text = data.cost.ToString();
     }
 
     public void OnClick()

@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 7426831738343362489}
   - component: {fileID: 7238866812105852014}
   - component: {fileID: 4851168508743810970}
+  - component: {fileID: 1918884477261758223}
   m_Layer: 5
   m_Name: Coin Panel
   m_TagString: Untagged
@@ -244,6 +245,20 @@ MonoBehaviour:
   m_Spacing: {x: 0, y: 0}
   m_Constraint: 0
   m_ConstraintCount: 2
+--- !u!114 &1918884477261758223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 952272428360814388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd5b90c8acf2bae4692a7a77dde66444, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MoneyManager
+  currentGold: 100
+  goldDisplay: {fileID: 1835160300320601699}
 --- !u!1 &1072704705149617489
 GameObject:
   m_ObjectHideFlags: 0
