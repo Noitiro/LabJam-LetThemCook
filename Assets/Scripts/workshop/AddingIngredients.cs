@@ -63,12 +63,18 @@ public class AddingIngredients : MonoBehaviour {
     }
 
     public void clearIngredients() {
-        Debug.Log(itemSlot.GetComponentInChildren<Image>());
-        Destroy(itemSlot.GetComponentInChildren<RectTransform>().gameObject.GetComponentInChildren<RectTransform>().gameObject);
-       // Debug.Log(itemSlot.GetComponentInChildren<AlchemyEnums.Ingredients>());
-        //Destroy(itemSlot.transform.GetChild(0).gameObject);
-       // Destroy(itemSlot1.transform.GetChild(0).gameObject);
-       // Destroy(itemSlot3.transform.GetChild(0).gameObject);
+        if (itemSlotEmpty == false) {
+            Destroy(itemSlot.transform.GetChild(0).gameObject);
+            itemSlotEmpty = true;
+        }
+        if (itemSlotEmpty1 == false) {
+            Destroy(itemSlot1.transform.GetChild(0).gameObject);
+            itemSlotEmpty1 = true;
+        }
+        if (itemSlotEmpty2 == false) {
+            Destroy(itemSlot3.transform.GetChild(0).gameObject);
+            itemSlotEmpty2 = true;
+        }
 
         ingredientsList.Clear();
     }
