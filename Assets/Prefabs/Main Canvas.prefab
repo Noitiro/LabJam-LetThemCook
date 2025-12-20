@@ -1974,7 +1974,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ShopManager
   cardsContainer: {fileID: 6202359600285579273}
-  shopCardPrefab: {fileID: 0}
+  shopCardPrefab: {fileID: 2365041025246212327, guid: 6cd37980dbf55eb468b85f2c393bc1df, type: 3}
   allUpgrades:
   - {fileID: 11400000, guid: 63d7223e22f7f1444b349f7d27957093, type: 2}
   - {fileID: 11400000, guid: 63d7223e22f7f1444b349f7d27957093, type: 2}

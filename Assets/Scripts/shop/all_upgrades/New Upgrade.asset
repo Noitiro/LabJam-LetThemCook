@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a79e79fe23e8a94f81056e9a6c680f3, type: 3}
   m_Name: New Upgrade
   m_EditorClassIdentifier: Assembly-CSharp::ShopUpgradeSO
-  upgradeName: 
-  description: 
-  cost: 0
+  upgradeName: Cos
+  description: Cos Tam
+  cost: 50
   type: 0
-  value: 0
+  value: 10
