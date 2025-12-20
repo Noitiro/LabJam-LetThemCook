@@ -21,7 +21,6 @@ public class RecipeSearcher : MonoBehaviour
 
     public AlchemyEnums.Ingredients? ReturnRecipe(AlchemyEnums.Instruments InstrumentType, List<AlchemyEnums.Ingredients> Ingredients)
     {
-        Debug.Log("XD");
         // Mamy dwie listy: sk³adniki, na których teraz pracujemy i sk³adniki potrzebne do recepty
         // Listy te mog¹ zawieraæ te same sk³adniki, ale w ró¿nej kolejnoœci, przez co sprawdzenie czy s¹ sobie równe nie bêdzie dzia³aæ.
         // Dlatego kopiujê je do InputIngredients i RecipeIngredients, potem sortujê i porównujê.
@@ -43,7 +42,6 @@ public class RecipeSearcher : MonoBehaviour
 
                 if(InputIngredients.SequenceEqual(RecipeIngredients))
                 {
-                    Debug.Log("XDDD");
                     if (QuestManager.Instance != null)
                     {
                         QuestManager.Instance.CheckQuestCompletion(recipe);
