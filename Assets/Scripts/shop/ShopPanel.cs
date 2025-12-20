@@ -37,17 +37,14 @@ public class ShopManager : MonoBehaviour
 
     public void TryBuyUpgrade(ShopUpgradeSO upgrade)
     {
-        int currentGold = 999; 
-
-        if (currentGold >= upgrade.cost)
+        if (MoneyManager.Instance.TrySpendGold(upgrade.cost))
         {
-            Debug.Log($"Kupiono: {upgrade.upgradeName} za {upgrade.cost}");
-
+            Debug.Log($"Kupiono: {upgrade.upgradeName}");
             ApplyUpgradeStats(upgrade);
         }
         else
         {
-            Debug.Log("Nie dla psa.");
+            Debug.Log("Nie dla psa!");
         }
     }
 

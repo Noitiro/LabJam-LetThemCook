@@ -8,7 +8,7 @@ public enum UpgradeType
 [CreateAssetMenu(fileName = "New Upgrade", menuName = "Upgrade Card")]
 public class ShopUpgradeSO : ScriptableObject
 {
-    public string upgradeName;      
+    public string upgradeName;
     [TextArea] public string description;
     public int cost; 
 
