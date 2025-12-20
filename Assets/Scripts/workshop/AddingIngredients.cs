@@ -4,6 +4,8 @@ using Unity.VisualScripting;
 using UnityEngine;
 public class AddingIngredients : MonoBehaviour {
     [SerializeField] SelectedIngredients selectedIngredients;
+    [SerializeField] RecipeSearcher recipeSearcher;
+
     [SerializeField] GameObject prefabSalt;
     [SerializeField] GameObject prefabMercury;
     [SerializeField] GameObject prefabSulphur;
@@ -16,7 +18,7 @@ public class AddingIngredients : MonoBehaviour {
     GameObject ing2;
     GameObject ing3;
 
-    List<AlchemyEnums.Ingredients> ingredientsList = new List<AlchemyEnums.Ingredients>();
+    public List<AlchemyEnums.Ingredients> ingredientsList = new List<AlchemyEnums.Ingredients>();
 
     bool itemSlotEmpty = true;
     bool itemSlotEmpty1 = true;
@@ -56,6 +58,10 @@ public class AddingIngredients : MonoBehaviour {
             Debug.Log("Put sulphur");
             itemSlotEmpty2 = false;
         }
+    }
+
+    public void create() {
+        recipeSearcher.ReturnRecipe(AlchemyEnums.Instruments.Alembic, ingredientsList);
     }
 
     public void clearIngredients() {
