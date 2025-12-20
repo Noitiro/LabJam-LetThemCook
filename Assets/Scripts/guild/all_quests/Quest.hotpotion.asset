@@ -101,6 +101,6 @@ MonoBehaviour:
 
 
 '
-  requiredPotion: {fileID: 11400000, guid: 7e981b9d1e49bd941ae5168a8a893c3f, type: 2}
+  requiredPotion: {fileID: 11400000, guid: cf47f3c9b0f179740ae9ce0c83ea9975, type: 2}
   goldReward: 50
   timeLimit: 30

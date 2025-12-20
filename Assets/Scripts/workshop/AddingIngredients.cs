@@ -14,10 +14,6 @@ public class AddingIngredients : MonoBehaviour {
     [SerializeField] GameObject itemSlot1;
     [SerializeField] GameObject itemSlot3;
 
-    GameObject ing1;
-    GameObject ing2;
-    GameObject ing3;
-
     public List<AlchemyEnums.Ingredients> ingredientsList = new List<AlchemyEnums.Ingredients>();
 
     bool itemSlotEmpty = true;
@@ -43,17 +39,17 @@ public class AddingIngredients : MonoBehaviour {
 
     private void add(GameObject prefab, AlchemyEnums.Ingredients typ) {
         if (itemSlotEmpty) {
-            ing1 = Instantiate(prefab, itemSlot.transform);
+            Instantiate(prefab, itemSlot.transform);
             ingredientsList.Add(typ);
             selectedIngredients.selectIng = null;
             itemSlotEmpty = false;
         } else if(itemSlotEmpty1) {
-            ing2 = Instantiate(prefab, itemSlot1.transform);
+            Instantiate(prefab, itemSlot1.transform);
             ingredientsList.Add(typ);
             selectedIngredients.selectIng = null;
             itemSlotEmpty1 = false;
         } else if (itemSlotEmpty2) {
-            ing3 = Instantiate(prefab, itemSlot3.transform);
+            Instantiate(prefab, itemSlot3.transform);
             ingredientsList.Add(typ);
             selectedIngredients.selectIng = null;
             itemSlotEmpty2 = false;
@@ -65,9 +61,10 @@ public class AddingIngredients : MonoBehaviour {
     }
 
     public void clearIngredients() {
-        Destroy(ing1);
-        Destroy(ing2);
-        Destroy(ing3);
+        //Destroy(itemSlot.GetComponentInChildren<GameObject>());
+       // Destroy(itemSlot1.GetComponentInChildren<GameObject>());
+      //  Destroy(itemSlot3.GetComponentInChildren<GameObject>());
+
         ingredientsList.Clear();
     }
 }
