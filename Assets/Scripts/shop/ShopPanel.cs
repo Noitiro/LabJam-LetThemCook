@@ -41,6 +41,8 @@ public class ShopManager : MonoBehaviour
         {
             Debug.Log($"Kupiono: {upgrade.upgradeName}");
             ApplyUpgradeStats(upgrade);
+            allUpgrades.Remove(upgrade);
+            GenerateShopCards();
         }
         else
         {
