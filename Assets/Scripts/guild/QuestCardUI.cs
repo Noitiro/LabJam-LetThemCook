@@ -8,7 +8,7 @@ public class QuestCardUI : MonoBehaviour
     [SerializeField] private TextMeshProUGUI description;
     [SerializeField] private TextMeshProUGUI reward;
     [SerializeField] private TextMeshProUGUI potionName;
-
+    [SerializeField] private TextMeshProUGUI timeText;
     private GuildQuestSO questData;
     private QuestManager manager;
 
@@ -28,6 +28,8 @@ public class QuestCardUI : MonoBehaviour
 
         if (potionName != null && data.requiredPotion != null)
             potionName.text = data.requiredPotion.recipeName;
+        if (timeText != null)
+            timeText.text = data.timeLimit.ToString() + "s";
     }
 
     public void OnClick()

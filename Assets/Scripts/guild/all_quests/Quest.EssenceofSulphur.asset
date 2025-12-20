@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 82ef84a6ccbc18b459a27a7990b063ed, type: 3}
-  m_Name: Quest.hotpotion
+  m_Name: Quest.EssenceofSulphur
   m_EditorClassIdentifier: Assembly-CSharp::GuildQuestSO
-  clientName: AndrZrj
+  clientName: Tomek
   requestDescription: 'Daj miksturke ok?
 
 
@@ -101,6 +101,6 @@ MonoBehaviour:
 
 
 '
-  requiredPotion: {fileID: 11400000, guid: cf47f3c9b0f179740ae9ce0c83ea9975, type: 2}
+  requiredPotion: {fileID: 11400000, guid: 4ebbeedf00ae1cb4e85a23bb94f04a5c, type: 2}
   goldReward: 50
   timeLimit: 30
