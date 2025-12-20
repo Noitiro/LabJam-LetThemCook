@@ -15,6 +15,6 @@ MonoBehaviour:
   clientName: Balthazar de Ouroboros
   requestDescription: Help me quench my burning curiosity about prime state of matter.
     Will pay handsomely.
-  requiredPotion: {fileID: 0}
+  requiredPotion: {fileID: 11400000, guid: 96d0733961a1bc8458739394dfca4ce1, type: 2}
   goldReward: 7780
   timeLimit: 30

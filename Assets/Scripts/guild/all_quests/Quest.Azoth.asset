@@ -15,6 +15,6 @@ MonoBehaviour:
   clientName: Percival Gutter
   requestDescription: Will fight unclean spirits in coming holy war. In need of substance
     purifying evil.
-  requiredPotion: {fileID: 0}
+  requiredPotion: {fileID: 11400000, guid: e52dc6cb2ef4a9145806846212ad86b8, type: 2}
   goldReward: 2070
   timeLimit: 30

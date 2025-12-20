@@ -15,6 +15,6 @@ MonoBehaviour:
   clientName: Belladonna Wisp
   requestDescription: Please help this old lady with melancholy and back pain. I
     will pay any cost for assistance.
-  requiredPotion: {fileID: 0}
+  requiredPotion: {fileID: 11400000, guid: 24c12970bf0dd874d82f97a23f959f92, type: 2}
   goldReward: 6200
   timeLimit: 30
