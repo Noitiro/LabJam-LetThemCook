@@ -17,3 +17,4 @@ MonoBehaviour:
   cost: 50
   type: 0
   value: 10
+  recipeReward: {fileID: 11400000, guid: 96d0733961a1bc8458739394dfca4ce1, type: 2}
