@@ -2,8 +2,7 @@ using UnityEngine;
 
 public enum UpgradeType
 {
-    cos,
-    tam
+    RecipeUnlock
 }
 [CreateAssetMenu(fileName = "New Upgrade", menuName = "Upgrade Card")]
 public class ShopUpgradeSO : ScriptableObject
@@ -14,4 +13,5 @@ public class ShopUpgradeSO : ScriptableObject
 
     public UpgradeType type;
     public float value;
+    public RecipeSO recipeReward;
 }

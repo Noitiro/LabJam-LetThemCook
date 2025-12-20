@@ -7,7 +7,7 @@ public class ShopManager : MonoBehaviour
 
     [SerializeField] private Transform cardsContainer;
     [SerializeField] private GameObject shopCardPrefab;
-
+    [SerializeField] private OwnedRecipeList ownedRecipeList;
     [SerializeField] private List<ShopUpgradeSO> allUpgrades; 
 
     private void Awake() { Instance = this; }
@@ -52,5 +52,20 @@ public class ShopManager : MonoBehaviour
 
     private void ApplyUpgradeStats(ShopUpgradeSO upgrade)
     {
+        if (upgrade.recipeReward != null)
+        {
+            if (ownedRecipeList != null)
+            {
+                ownedRecipeList.AddRecipe(upgrade.recipeReward);
+            }
+            else
+            {
+                Debug.LogError("BlaD");
+            }
+        }
+        else
+        {
+            Debug.Log("Inne ulepszenia");
+        }
     }
 }
