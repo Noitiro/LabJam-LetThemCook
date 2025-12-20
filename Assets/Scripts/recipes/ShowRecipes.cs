@@ -3,20 +3,20 @@ using static UnityEngine.GraphicsBuffer;
 
 public class ShowRecipes : MonoBehaviour {
     [SerializeField] GameObject button;
-    bool show = false;
     private Rigidbody2D rb;
 
+    private void Start () {
+        rb = GetComponent<Rigidbody2D>();
+    }
+
     void Update() {
-        showRecipes();
+       // showRecipes();
     }
     public void showRecipes() {
-        if (transform.position.x < -1) {
-            transform.Translate(Vector2.right * 1 * 100 * Time.deltaTime);
+        if (transform.position.x < 0) {
+            rb.linearVelocity = new Vector2(1 * 30, rb.linearVelocity.y);
 
-        } else if (transform.position.x < -1 && transform.position.x > 0) {
-            transform.Translate(0, 0, 0);
-
-        }
+        } 
 
     }
 
