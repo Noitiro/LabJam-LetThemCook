@@ -574,7 +574,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 837375c6a3bdb1540832a2a65f3447b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
-  RecipeList: []
+  RecipeList:
+  - {fileID: 11400000, guid: 96d0733961a1bc8458739394dfca4ce1, type: 2}
+  - {fileID: 11400000, guid: e52dc6cb2ef4a9145806846212ad86b8, type: 2}
+  - {fileID: 11400000, guid: c462aa0d65fe4a94a9b4d84f93cac4f3, type: 2}
+  - {fileID: 11400000, guid: a4a6199c915d13e4298188fd48e29642, type: 2}
+  - {fileID: 11400000, guid: 776a69c7d96109e4c905103b4e3391b9, type: 2}
+  - {fileID: 11400000, guid: 4ebbeedf00ae1cb4e85a23bb94f04a5c, type: 2}
+  - {fileID: 11400000, guid: d0d91e1a9d55e394b89c2a775730de4c, type: 2}
+  - {fileID: 11400000, guid: 1c1c29dc22a29ff43b9fa7c342da359d, type: 2}
+  - {fileID: 11400000, guid: c200dfceea5451846b7d047e7460d93c, type: 2}
+  - {fileID: 11400000, guid: 7990449470616124c8084bbf5b6b5be9, type: 2}
+  - {fileID: 11400000, guid: 0523b4a20261e714c8402b0c31e545b0, type: 2}
+  - {fileID: 11400000, guid: 179f9b427bc640d43b10ea72cbd88449, type: 2}
+  - {fileID: 11400000, guid: b475718d8bdabe84692301b3c98b3467, type: 2}
+  - {fileID: 11400000, guid: fbf4bbc7f37eb4d4ea909531b5755781, type: 2}
+  - {fileID: 11400000, guid: 24c12970bf0dd874d82f97a23f959f92, type: 2}
+  - {fileID: 11400000, guid: 573cb4329f1fd1c49b9d362452bb97e3, type: 2}
+  - {fileID: 11400000, guid: 71fc19d7ccfd9ab48abfcc5f51003400, type: 2}
+  - {fileID: 11400000, guid: 6817e2e134f7ce941b0843928bd9e6e1, type: 2}
+  - {fileID: 11400000, guid: e6acd443547cb6b43bc63f8d63b69bb9, type: 2}
+  - {fileID: 11400000, guid: 656ee54fb3b301d4aa5b70df0a2f3760, type: 2}
+  - {fileID: 11400000, guid: 577aa959e165fd146b7a56e3c6fe2dfc, type: 2}
+  - {fileID: 11400000, guid: ba3ddee3ea5b24b498d7ee590ca37599, type: 2}
+  - {fileID: 11400000, guid: c2fd61e22886e394f8ea599635a04a76, type: 2}
+  - {fileID: 11400000, guid: cf47f3c9b0f179740ae9ce0c83ea9975, type: 2}
+  - {fileID: 11400000, guid: 53b9d6bc0840eed438fb317cd67290f8, type: 2}
+  - {fileID: 11400000, guid: d3b40e9a335cdfa4484e226df89ca706, type: 2}
 --- !u!4 &1733750894
 Transform:
   m_ObjectHideFlags: 0
