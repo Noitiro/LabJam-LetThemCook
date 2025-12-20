@@ -413,6 +413,18 @@ MonoBehaviour:
   allQuests:
   - {fileID: 11400000, guid: 47e90f1d0810b8c449f36bbea24359d6, type: 2}
   - {fileID: 11400000, guid: 78fe51f78e882da43be58eb3d1b372f8, type: 2}
+  - {fileID: 11400000, guid: 78fe51f78e882da43be58eb3d1b372f8, type: 2}
+  - {fileID: 11400000, guid: 78fe51f78e882da43be58eb3d1b372f8, type: 2}
+  - {fileID: 11400000, guid: 78fe51f78e882da43be58eb3d1b372f8, type: 2}
+  - {fileID: 11400000, guid: 78fe51f78e882da43be58eb3d1b372f8, type: 2}
+  - {fileID: 11400000, guid: 78fe51f78e882da43be58eb3d1b372f8, type: 2}
+  - {fileID: 11400000, guid: 78fe51f78e882da43be58eb3d1b372f8, type: 2}
+  - {fileID: 11400000, guid: 78fe51f78e882da43be58eb3d1b372f8, type: 2}
+  - {fileID: 11400000, guid: 78fe51f78e882da43be58eb3d1b372f8, type: 2}
+  - {fileID: 11400000, guid: 78fe51f78e882da43be58eb3d1b372f8, type: 2}
+  - {fileID: 11400000, guid: 78fe51f78e882da43be58eb3d1b372f8, type: 2}
+  - {fileID: 11400000, guid: 78fe51f78e882da43be58eb3d1b372f8, type: 2}
+  - {fileID: 11400000, guid: 78fe51f78e882da43be58eb3d1b372f8, type: 2}
 --- !u!1 &1534176883856603931
 GameObject:
   m_ObjectHideFlags: 0
@@ -921,6 +933,106 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1 &3444460838214401001
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6202359600285579273}
+  - component: {fileID: 3332067639525280704}
+  - component: {fileID: 8831430104441500811}
+  - component: {fileID: 6349826309477808426}
+  m_Layer: 5
+  m_Name: CardsContainer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &6202359600285579273
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3444460838214401001}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5530570041303979067}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -0.000061035156, y: 0}
+  m_SizeDelta: {x: -264.68018, y: -668.42914}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &3332067639525280704
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3444460838214401001}
+  m_CullTransparentMesh: 1
+--- !u!114 &8831430104441500811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3444460838214401001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!114 &6349826309477808426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3444460838214401001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a8695521f0d02e499659fee002a26c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.GridLayoutGroup
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 0
+  m_StartCorner: 0
+  m_StartAxis: 0
+  m_CellSize: {x: 100, y: 100}
+  m_Spacing: {x: 20, y: 20}
+  m_Constraint: 0
+  m_ConstraintCount: 2
 --- !u!1 &3507798422636711894
 GameObject:
   m_ObjectHideFlags: 0
@@ -1783,6 +1895,7 @@ GameObject:
   - component: {fileID: 5530570041303979067}
   - component: {fileID: 8205339712160988483}
   - component: {fileID: 6632630468531107699}
+  - component: {fileID: 761829673936796551}
   m_Layer: 5
   m_Name: Shop
   m_TagString: Untagged
@@ -1801,7 +1914,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 6202359600285579273}
   m_Father: {fileID: 7464781625918425125}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1847,6 +1961,35 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &761829673936796551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7871209165813812005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e25d75f1a5fdad4293a3adfd701d72b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ShopManager
+  cardsContainer: {fileID: 6202359600285579273}
+  shopCardPrefab: {fileID: 2365041025246212327, guid: 6cd37980dbf55eb468b85f2c393bc1df, type: 3}
+  allUpgrades:
+  - {fileID: 11400000, guid: 63d7223e22f7f1444b349f7d27957093, type: 2}
+  - {fileID: 11400000, guid: 63d7223e22f7f1444b349f7d27957093, type: 2}
+  - {fileID: 11400000, guid: 63d7223e22f7f1444b349f7d27957093, type: 2}
+  - {fileID: 11400000, guid: 63d7223e22f7f1444b349f7d27957093, type: 2}
+  - {fileID: 11400000, guid: 63d7223e22f7f1444b349f7d27957093, type: 2}
+  - {fileID: 11400000, guid: 63d7223e22f7f1444b349f7d27957093, type: 2}
+  - {fileID: 11400000, guid: 63d7223e22f7f1444b349f7d27957093, type: 2}
+  - {fileID: 11400000, guid: 63d7223e22f7f1444b349f7d27957093, type: 2}
+  - {fileID: 11400000, guid: 63d7223e22f7f1444b349f7d27957093, type: 2}
+  - {fileID: 11400000, guid: 63d7223e22f7f1444b349f7d27957093, type: 2}
+  - {fileID: 11400000, guid: 63d7223e22f7f1444b349f7d27957093, type: 2}
+  - {fileID: 11400000, guid: 63d7223e22f7f1444b349f7d27957093, type: 2}
+  - {fileID: 11400000, guid: 63d7223e22f7f1444b349f7d27957093, type: 2}
+  - {fileID: 11400000, guid: 63d7223e22f7f1444b349f7d27957093, type: 2}
 --- !u!1 &8148043203664244862
 GameObject:
   m_ObjectHideFlags: 0

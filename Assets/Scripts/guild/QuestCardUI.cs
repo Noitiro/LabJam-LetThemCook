@@ -3,7 +3,6 @@ using TMPro;
 
 public class QuestCardUI : MonoBehaviour
 {
-    [Header("Elementy do uzupe³nienia")]
     [SerializeField] private TextMeshProUGUI clientName;
     [SerializeField] private TextMeshProUGUI description;
     [SerializeField] private TextMeshProUGUI reward;
