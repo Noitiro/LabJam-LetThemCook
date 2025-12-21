@@ -4511,9 +4511,37 @@ PrefabInstance:
       propertyPath: ownedRecipeList
       value: 
       objectReference: {fileID: 512044464849599918}
+    - target: {fileID: 5099606316969901297, guid: e51a54d8155a19c40b4ccf2c8ab19b4f, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5099606316969901297, guid: e51a54d8155a19c40b4ccf2c8ab19b4f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9cef8bb8fed0581488b771ea9e395d54, type: 3}
+    - target: {fileID: 5099606316969901297, guid: e51a54d8155a19c40b4ccf2c8ab19b4f, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5099606316969901297, guid: e51a54d8155a19c40b4ccf2c8ab19b4f, type: 3}
+      propertyPath: m_Color.g
+      value: 0.78586036
+      objectReference: {fileID: 0}
+    - target: {fileID: 5099606316969901297, guid: e51a54d8155a19c40b4ccf2c8ab19b4f, type: 3}
+      propertyPath: m_Color.r
+      value: 0.6839622
+      objectReference: {fileID: 0}
+    - target: {fileID: 6811672544519924565, guid: e51a54d8155a19c40b4ccf2c8ab19b4f, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9164023525578277709, guid: e51a54d8155a19c40b4ccf2c8ab19b4f, type: 3}
       propertyPath: m_Name
       value: Shop
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164023525578277709, guid: e51a54d8155a19c40b4ccf2c8ab19b4f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6340,7 +6368,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: af4fe7d7c7fd7fd47bf66594df219cf6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3b51fc386c78f9b46a9f0e269bb394b4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8410,6 +8438,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Guild
       objectReference: {fileID: 0}
+    - target: {fileID: 1038396257287508000, guid: 376c110b27e83744185e05358013a051, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6550740259272041116, guid: 376c110b27e83744185e05358013a051, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -8489,6 +8521,30 @@ PrefabInstance:
     - target: {fileID: 6550740259272041116, guid: 376c110b27e83744185e05358013a051, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7864120825204990275, guid: 376c110b27e83744185e05358013a051, type: 3}
+      propertyPath: m_Color.b
+      value: 0.56078434
+      objectReference: {fileID: 0}
+    - target: {fileID: 7864120825204990275, guid: 376c110b27e83744185e05358013a051, type: 3}
+      propertyPath: m_Color.r
+      value: 0.7176471
+      objectReference: {fileID: 0}
+    - target: {fileID: 9073215440112942211, guid: 376c110b27e83744185e05358013a051, type: 3}
+      propertyPath: m_Spacing.x
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 9073215440112942211, guid: 376c110b27e83744185e05358013a051, type: 3}
+      propertyPath: m_CellSize.x
+      value: 350
+      objectReference: {fileID: 0}
+    - target: {fileID: 9073215440112942211, guid: 376c110b27e83744185e05358013a051, type: 3}
+      propertyPath: m_CellSize.y
+      value: 440
+      objectReference: {fileID: 0}
+    - target: {fileID: 9073215440112942211, guid: 376c110b27e83744185e05358013a051, type: 3}
+      propertyPath: m_Padding.m_Top
+      value: 130
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9007,7 +9063,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 291bbbd127813294cb85769503d100a2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3b51fc386c78f9b46a9f0e269bb394b4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

@@ -175,7 +175,7 @@ public class QuestManager : MonoBehaviour
         if (currentActiveQuest != null) return;
 
         List<GuildQuestSO> deck = new List<GuildQuestSO>(allQuests);
-        int cardsToDraw = Mathf.Min(8, deck.Count);
+        int cardsToDraw = Mathf.Min(6, deck.Count);
 
         float percent = 0.5f;
         int sureCards = (int)Mathf.Min(cardsToDraw * percent, RecipeList.RecipeList.Count);
