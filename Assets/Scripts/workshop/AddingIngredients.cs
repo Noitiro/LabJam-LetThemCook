@@ -8,6 +8,8 @@ public class AddingIngredients : MonoBehaviour {
     [SerializeField] SelectedIngredients selectedIngredients;
     [SerializeField] RecipeSearcher recipeSearcher;
 
+    [SerializeField] AlchemyEnums.Instruments instrumentName;
+
     [SerializeField] GameObject prefabSalt;
     [SerializeField] GameObject prefabMercury;
     [SerializeField] GameObject prefabSulphur;
@@ -59,7 +61,7 @@ public class AddingIngredients : MonoBehaviour {
     }
 
     public void create() {
-        recipeSearcher.ReturnRecipe(AlchemyEnums.Instruments.Alembic, ingredientsList);
+        recipeSearcher.ReturnRecipe(instrumentName, ingredientsList);
     }
 
     public void clearIngredients() {
