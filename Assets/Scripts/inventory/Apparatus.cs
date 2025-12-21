@@ -81,9 +81,11 @@ public class Apparatus : MonoBehaviour
                 {
                     RecipeSO ItemRecipe = Searcher.ReturnIngredientRecipe(OutputRecipe);
 
-                    outputItemSlot.itemInSlot = OutputRecipe;
-                    outputItemSlot.itemImage = ItemRecipe.icon;
-                    outputItemSlot.button.GetComponent<Image>().sprite = ItemRecipe.icon;
+                    //outputItemSlot.itemInSlot = OutputRecipe;
+                    //outputItemSlot.itemImage = ItemRecipe.icon;
+                    //outputItemSlot.button.GetComponent<Image>().sprite = ItemRecipe.icon;
+
+                    outputItemSlot.SetItem(OutputRecipe, ItemRecipe.icon);
                 }
 
                 clock.GetComponent<Image>().fillAmount = 0.0f;
@@ -121,7 +123,7 @@ public class Apparatus : MonoBehaviour
             slot.ClearSlot();
         }
 
-        outputItemSlot.ClearSlot();
+        //outputItemSlot.ClearSlot();
 
         if (isWorking) isWorking = false;
         Audio.FadeOut(name);

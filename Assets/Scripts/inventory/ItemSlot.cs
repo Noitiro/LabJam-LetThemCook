@@ -72,6 +72,13 @@ public class ItemSlot : MonoBehaviour
         }
     }
 
+    public void SetItem(AlchemyEnums.Ingredients item, Sprite image)
+    {
+        itemInSlot = item;
+        itemImage = image;
+        button.GetComponent<Image>().sprite = image;
+    }
+
     public void setTestItem()
     {
         itemInSlot = AlchemyEnums.Ingredients.Salt;
