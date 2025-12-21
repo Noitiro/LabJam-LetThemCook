@@ -5,6 +5,9 @@ public class LoadPanel : MonoBehaviour
     [SerializeField] GameObject Shop;
     [SerializeField] GameObject Guild;
 
+    [SerializeField] GameObject OpenScrollButton;
+    [SerializeField] GameObject CloseScrollButton;
+
     public void showPanel(string nameType) {
         switch (nameType) {
             case "workshop":
