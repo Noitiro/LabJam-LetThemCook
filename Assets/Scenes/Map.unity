@@ -2516,6 +2516,18 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4367852302234957331, guid: e51a54d8155a19c40b4ccf2c8ab19b4f, type: 3}
+      propertyPath: mortarObject
+      value: 
+      objectReference: {fileID: 3759716981291880232}
+    - target: {fileID: 4367852302234957331, guid: e51a54d8155a19c40b4ccf2c8ab19b4f, type: 3}
+      propertyPath: alembicObject
+      value: 
+      objectReference: {fileID: 3616062645002930259}
+    - target: {fileID: 4367852302234957331, guid: e51a54d8155a19c40b4ccf2c8ab19b4f, type: 3}
+      propertyPath: athanorObject
+      value: 
+      objectReference: {fileID: 2906799097776085572}
+    - target: {fileID: 4367852302234957331, guid: e51a54d8155a19c40b4ccf2c8ab19b4f, type: 3}
       propertyPath: ownedRecipeList
       value: 
       objectReference: {fileID: 512044464849599918}
