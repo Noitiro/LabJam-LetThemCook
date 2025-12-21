@@ -13,7 +13,11 @@ MonoBehaviour:
   m_Name: sublimated_mercury
   m_EditorClassIdentifier: Assembly-CSharp::RecipeSO
   recipeName: Sublimated Mercury
+<<<<<<< Updated upstream
   icon: {fileID: 21300000, guid: f43e0f0f8207461459be9e635ac854a4, type: 3}
+=======
+  icon: {fileID: 2530665985530915115, guid: f43e0f0f8207461459be9e635ac854a4, type: 3}
+>>>>>>> Stashed changes
   Ingredients: 01000000
   Instrument: 1
   Potion: 6

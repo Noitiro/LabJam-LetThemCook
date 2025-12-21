@@ -16,5 +16,5 @@ MonoBehaviour:
   icon: {fileID: 0}
   Ingredients: 0100000000000000
   Instrument: 1
-  Potion: 4
+  Potion: 2
   cookTime: 2

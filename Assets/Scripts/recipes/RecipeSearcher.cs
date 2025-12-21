@@ -19,7 +19,7 @@ public class RecipeSearcher : MonoBehaviour
         
     }
 
-    public AlchemyEnums.Ingredients? ReturnRecipe(AlchemyEnums.Instruments InstrumentType, List<AlchemyEnums.Ingredients> Ingredients)
+    public AlchemyEnums.Ingredients ReturnRecipe(AlchemyEnums.Instruments InstrumentType, List<AlchemyEnums.Ingredients> Ingredients)
     {
         // Mamy dwie listy: sk³adniki, na których teraz pracujemy i sk³adniki potrzebne do recepty
         // Listy te mog¹ zawieraæ te same sk³adniki, ale w ró¿nej kolejnoœci, przez co sprawdzenie czy s¹ sobie równe nie bêdzie dzia³aæ.
@@ -34,25 +34,26 @@ public class RecipeSearcher : MonoBehaviour
             if (recipe.Instrument == InstrumentType)
             {
                 // Patrzymy czy sk³adniki siê zgadzaj¹
+                if(recipe.Ingredients == null) { Debug.LogError(recipe.name); continue; }
                 InputIngredients = new List<AlchemyEnums.Ingredients>(Ingredients);
                 RecipeIngredients = new List<AlchemyEnums.Ingredients>(recipe.Ingredients);
 
                 InputIngredients.Sort();
                 RecipeIngredients.Sort();
 
-                if(InputIngredients.SequenceEqual(RecipeIngredients))
+                if (InputIngredients.SequenceEqual(RecipeIngredients))
                 {
                     if (QuestManager.Instance != null)
                     {
                         QuestManager.Instance.CheckQuestCompletion(recipe);
                     }
-                    Debug.Log(recipe.Potion);
+
                     return recipe.Potion;
                 }
             }
         }
 
-        return null;
+        return AlchemyEnums.Ingredients.Null;
     }
 
 
