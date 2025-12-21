@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: azoth
   m_EditorClassIdentifier: Assembly-CSharp::RecipeSO
   recipeName: Azoth
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 7d24f7765c66ac64a8f4468ae5a5115e, type: 3}
   Ingredients: 0f000000080000000c000000
   Instrument: 1
   Potion: 19

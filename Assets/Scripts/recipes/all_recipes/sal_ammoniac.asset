@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: sal_ammoniac
   m_EditorClassIdentifier: Assembly-CSharp::RecipeSO
   recipeName: Sal Ammoniac
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 9f700e80a2072c9468379c4a8d739292, type: 3}
   Ingredients: 0000000002000000
   Instrument: 1
   Potion: 7

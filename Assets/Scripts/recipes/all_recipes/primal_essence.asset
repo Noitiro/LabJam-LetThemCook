@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: primal_essence
   m_EditorClassIdentifier: Assembly-CSharp::RecipeSO
   recipeName: Primal Essence
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 17b409a349f545648a85c152f5902deb, type: 3}
   Ingredients: 000000000100000002000000
   Instrument: 0
   Potion: 21

@@ -1584,7 +1584,7 @@ PrefabInstance:
     - target: {fileID: 4198803063010057184, guid: 1276ef6b181a7ad458ca0ee2c586cf75, type: 3}
       propertyPath: Inventory
       value: 
-      objectReference: {fileID: 1218431745}
+      objectReference: {fileID: 0}
     - target: {fileID: 7664464464195616996, guid: 1276ef6b181a7ad458ca0ee2c586cf75, type: 3}
       propertyPath: m_Name
       value: In1
@@ -1695,7 +1695,7 @@ PrefabInstance:
     - target: {fileID: 4198803063010057184, guid: 1276ef6b181a7ad458ca0ee2c586cf75, type: 3}
       propertyPath: Inventory
       value: 
-      objectReference: {fileID: 1218431745}
+      objectReference: {fileID: 0}
     - target: {fileID: 7664464464195616996, guid: 1276ef6b181a7ad458ca0ee2c586cf75, type: 3}
       propertyPath: m_Name
       value: In2
@@ -1715,17 +1715,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7664464464195616996, guid: 1276ef6b181a7ad458ca0ee2c586cf75, type: 3}
   m_PrefabInstance: {fileID: 1186166190}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1218431745 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2286529145743413737, guid: 80881a8a64a2e6a4582139d49e686830, type: 3}
-  m_PrefabInstance: {fileID: 667919528}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6b4526f423d266498eed43c595d98fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::InventorySystem
 --- !u!1 &1346610869
 GameObject:
   m_ObjectHideFlags: 0
@@ -2087,7 +2076,7 @@ PrefabInstance:
     - target: {fileID: 4198803063010057184, guid: 1276ef6b181a7ad458ca0ee2c586cf75, type: 3}
       propertyPath: Inventory
       value: 
-      objectReference: {fileID: 1218431745}
+      objectReference: {fileID: 0}
     - target: {fileID: 7664464464195616996, guid: 1276ef6b181a7ad458ca0ee2c586cf75, type: 3}
       propertyPath: m_Name
       value: Out
@@ -2429,7 +2418,7 @@ PrefabInstance:
     - target: {fileID: 4198803063010057184, guid: 1276ef6b181a7ad458ca0ee2c586cf75, type: 3}
       propertyPath: Inventory
       value: 
-      objectReference: {fileID: 1218431745}
+      objectReference: {fileID: 0}
     - target: {fileID: 7664464464195616996, guid: 1276ef6b181a7ad458ca0ee2c586cf75, type: 3}
       propertyPath: m_Name
       value: In3

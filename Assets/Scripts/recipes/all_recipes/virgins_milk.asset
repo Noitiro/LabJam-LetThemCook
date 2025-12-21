@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: virgins_milk
   m_EditorClassIdentifier: Assembly-CSharp::RecipeSO
   recipeName: Virgin's Milk
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 67d6d76b2c40ff34a9e2d2df1dc66040, type: 3}
   Ingredients: 0e0000000f000000
   Instrument: 1
   Potion: 20

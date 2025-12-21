@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: kalomel
   m_EditorClassIdentifier: Assembly-CSharp::RecipeSO
   recipeName: Kalomel
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 6e347135a5627a8498f03643e1ec1014, type: 3}
   Ingredients: 0600000007000000
   Instrument: 2
   Potion: 14
