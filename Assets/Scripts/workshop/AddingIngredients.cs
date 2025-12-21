@@ -18,6 +18,8 @@ public class AddingIngredients : MonoBehaviour {
     [SerializeField] GameObject itemSlot1;
     [SerializeField] GameObject itemSlot3;
 
+    [SerializeField] GameObject finalSlot;
+
     public List<AlchemyEnums.Ingredients> ingredientsList = new List<AlchemyEnums.Ingredients>();
 
     bool itemSlotEmpty = true;
@@ -62,6 +64,8 @@ public class AddingIngredients : MonoBehaviour {
 
     public void create() {
         recipeSearcher.ReturnRecipe(instrumentName, ingredientsList);
+        clearIngredients();
+        Instantiate(prefabSulphur, finalSlot.transform);
     }
 
     public void clearIngredients() {
