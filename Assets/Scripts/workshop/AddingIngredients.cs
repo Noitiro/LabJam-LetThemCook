@@ -111,4 +111,9 @@ public class AddingIngredients : MonoBehaviour {
 
         ingredientsList.Clear();
     }
+
+    public void ReduceCookingTime(float amount) {
+        time -= amount;
+        if (time < 0.5f) time = 0.5f;
+    }
 }
