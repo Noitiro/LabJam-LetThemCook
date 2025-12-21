@@ -1372,6 +1372,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 9d980f32e58315443a374b6dd45909e2, type: 2}
   - {fileID: 11400000, guid: 562c3edd16f0030418aee6af123cb9b2, type: 2}
   currentQuestNameText: {fileID: 3075981779003967746}
+  RecipeList: {fileID: 1707685860239455455}
   currentActiveQuest: {fileID: 0}
 --- !u!224 &6210328249475319458 stripped
 RectTransform:

@@ -12,22 +12,28 @@ public class QuestManager : MonoBehaviour
     [SerializeField] private List<GuildQuestSO> allQuests;
     [SerializeField] private TextMeshProUGUI currentQuestNameText;
 
+    [SerializeField] private OwnedRecipeList RecipeList;
+
     public GuildQuestSO currentActiveQuest;
     private float timeRemaining;
+
     private void Awake()
     {
         if (Instance != null && Instance != this) Destroy(gameObject);
         else Instance = this;
     }
+
     private void Start()
     {
         if (activeTimerText != null) activeTimerText.gameObject.SetActive(false);
         UpdateQuestHUD();
     }
+
     private void OnEnable()
     {
         GenerateCards();
     }
+
     private void Update()
     {
         if (currentActiveQuest != null)
@@ -43,6 +49,7 @@ public class QuestManager : MonoBehaviour
             }
         }
     }
+
     public void GenerateCards()
     {
         foreach (Transform child in cardsContainer)
@@ -58,7 +65,48 @@ public class QuestManager : MonoBehaviour
         List<GuildQuestSO> deck = new List<GuildQuestSO>(allQuests);
         int cardsToDraw = Mathf.Min(8, deck.Count);
 
-        for (int i = 0; i < cardsToDraw; i++)
+        // Trzeba zagwarantowaæ, ¿e przynajmniej czêœæ zadañ bêdzie mo¿liwa do wykonania, zmienna percent pokazuje jaka to iloœæ
+        // Mo¿na by próbowaæ generowaæ te¿ procent zadañ, które mog¹ byæ wykonane po zakupie recept, ale komplikuje to sprawê
+        // Maybe TODO in future
+        float percent = 0.5f;
+        int sureCards = (int)Mathf.Min(cardsToDraw * percent, RecipeList.RecipeList.Count);
+        int restCards = cardsToDraw - sureCards;
+
+        //Stare zwyk³e randomowe generowanie
+        /*for (int i = 0; i < cardsToDraw; i++)
+        {
+            int randomIndex = Random.Range(0, deck.Count);
+            GuildQuestSO drawnQuest = deck[randomIndex];
+            deck.RemoveAt(randomIndex);
+
+            GameObject cardObj = Instantiate(questCardPrefab, cardsContainer);
+            cardObj.GetComponent<QuestCardUI>().Setup(drawnQuest, this);
+        }*/
+
+        //Generowanie zadañ gwarantowanych
+        for (int i = 0; i < sureCards; i++)
+        {
+            int randomIndex;
+            GuildQuestSO drawnQuest;
+
+            Debug.Log("===Start looking for guaranteed quest===");
+            string log;
+            while (true)
+            {
+                randomIndex = Random.Range(0, deck.Count);
+                drawnQuest = deck[randomIndex];
+
+                if (RecipeList.IsRecipeOwned(drawnQuest.requiredPotion)) break;
+            }
+
+            deck.RemoveAt(randomIndex);
+
+            GameObject cardObj = Instantiate(questCardPrefab, cardsContainer);
+            cardObj.GetComponent<QuestCardUI>().Setup(drawnQuest, this);
+        }
+
+        //Generowanie reszty zadañ
+        for (int i = 0; i < restCards; i++)
         {
             int randomIndex = Random.Range(0, deck.Count);
             GuildQuestSO drawnQuest = deck[randomIndex];

@@ -10,6 +10,8 @@ public class OwnedRecipeList : MonoBehaviour
 
     public RecipeSO BaseRecipe;
 
+    public List<RecipeSO> RecipeList = new List<RecipeSO>();
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -54,5 +56,14 @@ public class OwnedRecipeList : MonoBehaviour
         WriteRecipe += " (" + NewRecipe.Instrument + ")";
 
         Recipe.text = WriteRecipe;
+
+        RecipeList.Add(NewRecipe);
+    }
+
+    public bool IsRecipeOwned(RecipeSO recipe)
+    {
+        if (RecipeList.Contains(recipe)) return true;
+
+        return false;
     }
 }
