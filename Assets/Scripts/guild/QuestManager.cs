@@ -14,8 +14,9 @@ public class QuestManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI currentQuestNameText;
 
     [SerializeField] private GameObject actionButton;
-    [SerializeField] private TextMeshProUGUI actionButtonText; 
+    [SerializeField] private TextMeshProUGUI actionButtonText;
 
+    [SerializeField] private AddingIngredients addingIngredients;
     [SerializeField] private OwnedRecipeList RecipeList;
 
     public GuildQuestSO currentActiveQuest;
@@ -64,11 +65,13 @@ public class QuestManager : MonoBehaviour
         if (isReadyToFinish)
         {
             FinishQuestSuccess();
+            addingIngredients.finishTask();
         }
         else
         {
             Debug.Log("Gracz anulowa³ zadanie.");
             FailQuest();
+            addingIngredients.finishTask();
         }
     }
 

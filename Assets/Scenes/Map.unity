@@ -204,7 +204,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 5415294108964618211}
         m_TargetAssemblyTypeName: QuestManager, Assembly-CSharp
-        m_MethodName: AbandonQuest
+        m_MethodName: Teges
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4539,7 +4539,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::QuestManager
   cardsContainer: {fileID: 2970122403431101622}
   questCardPrefab: {fileID: 2365041025246212327, guid: 935e42773da0eee4ba01c86a0776a213, type: 3}
-  activeTimerText: {fileID: 3019412094348363235}
   allQuests:
   - {fileID: 11400000, guid: 2a2d2ea4b067d564097bca63325d42c2, type: 2}
   - {fileID: 11400000, guid: cbf49f9d1141a0145ba8285fbd8969e2, type: 2}
@@ -4566,8 +4565,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 47e90f1d0810b8c449f36bbea24359d6, type: 2}
   - {fileID: 11400000, guid: 9d980f32e58315443a374b6dd45909e2, type: 2}
   - {fileID: 11400000, guid: 562c3edd16f0030418aee6af123cb9b2, type: 2}
+  activeTimerText: {fileID: 3019412094348363235}
   currentQuestNameText: {fileID: 1209819359226954274}
-  cancelQuestButton: {fileID: 140320541}
+  actionButton: {fileID: 140320541}
+  actionButtonText: {fileID: 595736319}
   RecipeList: {fileID: 512044464849599918}
   currentActiveQuest: {fileID: 0}
 --- !u!114 &5416834716667641749
