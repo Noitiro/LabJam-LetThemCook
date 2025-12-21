@@ -91,20 +91,13 @@ public class QuestManager : MonoBehaviour
             int randomIndex;
             GuildQuestSO drawnQuest;
 
-            Debug.Log("===Start looking for guaranteed quest===");
-            string log = "";
             while (true)
             {
                 randomIndex = Random.Range(0, deck.Count);
                 drawnQuest = deck[randomIndex];
 
-                log += "Is recipe on the list? : " + drawnQuest.requiredPotion.recipeName + "\n";
-
                 if (RecipeList.IsRecipeOwned(drawnQuest.requiredPotion)) break;
             }
-
-            log += "Recipe is on the list";
-            Debug.Log(log);
 
             deck.RemoveAt(randomIndex);
 
@@ -153,11 +146,10 @@ public class QuestManager : MonoBehaviour
             if (MoneyManager.Instance != null)
             {
                 MoneyManager.Instance.AddGold(currentActiveQuest.goldReward);
-                GenerateCards();
-
             }
 
             currentActiveQuest = null;
+            GenerateCards();
             UpdateQuestHUD();
             if (activeTimerText != null) activeTimerText.gameObject.SetActive(false);
         }
