@@ -541,9 +541,21 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6577788530090470315}
+      - m_Target: {fileID: 8034798378450948733}
         m_TargetAssemblyTypeName: AddingIngredients, Assembly-CSharp
-        m_MethodName: putIngredients
+        m_MethodName: putItem
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6807538272647307942}
+        m_TargetAssemblyTypeName: ShelfListIngredients, Assembly-CSharp
+        m_MethodName: showItem
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1143,7 +1155,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000050068, y: 0.0000066757}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 182.387, y: 132.985}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &270214163346444096
@@ -1276,6 +1288,7 @@ MonoBehaviour:
   selectedIngredients: {fileID: 7001948274263933664}
   recipeSearcher: {fileID: 4968032790813323641}
   listIngedients: {fileID: 0}
+  shelfListIngredients: {fileID: 0}
   instrumentName: 0
   prefabSalt: {fileID: 8499557346003809048, guid: f87b7a7de104fa24e8e6620178f4f435, type: 3}
   prefabMercury: {fileID: 1287641751586122006, guid: c2735b7f06f9dcb43a58188c3499cde0, type: 3}
@@ -2040,7 +2053,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -673306825874429820, guid: d7f7c016fb048814fa3163dc57a0ca79, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d7f7c016fb048814fa3163dc57a0ca79, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2653,7 +2666,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 2989362190722813677}
+  m_TargetGraphic: {fileID: 3962112117880830896}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -2775,7 +2788,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8034798378450948733}
         m_TargetAssemblyTypeName: AddingIngredients, Assembly-CSharp
-        m_MethodName: putIngredients
+        m_MethodName: selectItem
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2800,10 +2813,10 @@ RectTransform:
   - {fileID: 6554075358701752897}
   m_Father: {fileID: 909451695703688062}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 177.592, y: 148.687}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2885594074004136553
 MonoBehaviour:
@@ -3792,7 +3805,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 6733011265145166646, guid: ad6a2a75b6483084b889890e9b68adfa, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ad6a2a75b6483084b889890e9b68adfa, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5457,7 +5470,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: -4, y: -4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &6167906346426366668
 MonoBehaviour:
@@ -5847,6 +5860,7 @@ MonoBehaviour:
   selectedIngredients: {fileID: 7001948274263933664}
   recipeSearcher: {fileID: 4968032790813323641}
   listIngedients: {fileID: 0}
+  shelfListIngredients: {fileID: 0}
   instrumentName: 2
   prefabSalt: {fileID: 8499557346003809048, guid: f87b7a7de104fa24e8e6620178f4f435, type: 3}
   prefabMercury: {fileID: 1287641751586122006, guid: c2735b7f06f9dcb43a58188c3499cde0, type: 3}
@@ -6340,7 +6354,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a4b8ff3fdbc1fe4eb7f84c9328dca5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ShelfListIngredients
-  shelfIngredientsList: 
+  shelfList: 
+  listIngedients: {fileID: 1507921072272929691}
+  shelfSlot: {fileID: 460405280}
+  shelfSlot2: {fileID: 429094478}
+  shelfSlot3: {fileID: 702647011}
 --- !u!1 &6814481421684276587
 GameObject:
   m_ObjectHideFlags: 0
@@ -6935,6 +6953,7 @@ MonoBehaviour:
   selectedIngredients: {fileID: 7001948274263933664}
   recipeSearcher: {fileID: 4968032790813323641}
   listIngedients: {fileID: 1507921072272929691}
+  shelfListIngredients: {fileID: 6807538272647307942}
   instrumentName: 1
   prefabSalt: {fileID: 8499557346003809048, guid: f87b7a7de104fa24e8e6620178f4f435, type: 3}
   prefabMercury: {fileID: 1287641751586122006, guid: c2735b7f06f9dcb43a58188c3499cde0, type: 3}
@@ -7396,7 +7415,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5734004976408376876}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 

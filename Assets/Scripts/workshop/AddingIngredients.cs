@@ -9,9 +9,11 @@ public class AddingIngredients : MonoBehaviour {
     [SerializeField] SelectedIngredients selectedIngredients;
     [SerializeField] RecipeSearcher recipeSearcher;
     [SerializeField] ListIngedients listIngedients;
+    [SerializeField] ShelfListIngredients shelfListIngredients;
+
 
     [SerializeField] AlchemyEnums.Instruments instrumentName;
-    [SerializeField] AlchemyEnums.Ingredients? finalItem;
+    AlchemyEnums.Ingredients? finalItem;
 
     [SerializeField] GameObject prefabSalt;
     [SerializeField] GameObject prefabMercury;
@@ -81,6 +83,14 @@ public class AddingIngredients : MonoBehaviour {
     public void selectItem() {
         if (itemFinalSlotEmpty == false) {
             selectedIngredients.selectIng = finalItem;
+            Debug.Log("xddddddddddddd");
+        }
+    }
+
+    public void putItem() {
+        if(shelfListIngredients.shelfIngredientsList != null) {
+            shelfListIngredients.shelfIngredientsList.Add(finalItem);
+            finishTask();
         }
     }
 
