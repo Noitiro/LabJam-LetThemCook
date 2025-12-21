@@ -543,7 +543,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8034798378450948733}
         m_TargetAssemblyTypeName: AddingIngredients, Assembly-CSharp
-        m_MethodName: putItem
+        m_MethodName: putIngredients
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1288,7 +1288,6 @@ MonoBehaviour:
   selectedIngredients: {fileID: 7001948274263933664}
   recipeSearcher: {fileID: 4968032790813323641}
   listIngedients: {fileID: 0}
-  shelfListIngredients: {fileID: 0}
   instrumentName: 0
   prefabSalt: {fileID: 8499557346003809048, guid: f87b7a7de104fa24e8e6620178f4f435, type: 3}
   prefabMercury: {fileID: 1287641751586122006, guid: c2735b7f06f9dcb43a58188c3499cde0, type: 3}
@@ -5872,7 +5871,6 @@ MonoBehaviour:
   selectedIngredients: {fileID: 7001948274263933664}
   recipeSearcher: {fileID: 4968032790813323641}
   listIngedients: {fileID: 0}
-  shelfListIngredients: {fileID: 0}
   instrumentName: 2
   prefabSalt: {fileID: 8499557346003809048, guid: f87b7a7de104fa24e8e6620178f4f435, type: 3}
   prefabMercury: {fileID: 1287641751586122006, guid: c2735b7f06f9dcb43a58188c3499cde0, type: 3}
@@ -6965,7 +6963,6 @@ MonoBehaviour:
   selectedIngredients: {fileID: 7001948274263933664}
   recipeSearcher: {fileID: 4968032790813323641}
   listIngedients: {fileID: 1507921072272929691}
-  shelfListIngredients: {fileID: 6807538272647307942}
   instrumentName: 1
   prefabSalt: {fileID: 8499557346003809048, guid: f87b7a7de104fa24e8e6620178f4f435, type: 3}
   prefabMercury: {fileID: 1287641751586122006, guid: c2735b7f06f9dcb43a58188c3499cde0, type: 3}
