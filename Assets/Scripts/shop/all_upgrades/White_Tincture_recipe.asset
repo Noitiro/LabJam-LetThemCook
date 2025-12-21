@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: White_Tincture_recipe
   m_EditorClassIdentifier: Assembly-CSharp::ShopUpgradeSO
   upgradeName: White Tincture
-  description: Cos Tam
+  description: 
   cost: 50
   type: 0
   value: 10
   recipeReward: {fileID: 11400000, guid: d3b40e9a335cdfa4484e226df89ca706, type: 2}
+  machineToUnlock: 0

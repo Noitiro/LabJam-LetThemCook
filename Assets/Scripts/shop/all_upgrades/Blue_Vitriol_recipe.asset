@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Blue_Vitriol_recipe
   m_EditorClassIdentifier: Assembly-CSharp::ShopUpgradeSO
   upgradeName: Blue Vitriol
-  description: Cos Tam
+  description: 
   cost: 50
   type: 0
   value: 10
   recipeReward: {fileID: 11400000, guid: c462aa0d65fe4a94a9b4d84f93cac4f3, type: 2}
+  machineToUnlock: 0

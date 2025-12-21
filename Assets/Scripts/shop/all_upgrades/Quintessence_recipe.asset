@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Quintessence_recipe
   m_EditorClassIdentifier: Assembly-CSharp::ShopUpgradeSO
   upgradeName: Quintessence
-  description: Cos Tam
+  description: 
   cost: 50
   type: 0
   value: 10
   recipeReward: {fileID: 11400000, guid: 71fc19d7ccfd9ab48abfcc5f51003400, type: 2}
+  machineToUnlock: 0

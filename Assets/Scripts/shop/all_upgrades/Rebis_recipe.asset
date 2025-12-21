@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Rebis_recipe
   m_EditorClassIdentifier: Assembly-CSharp::ShopUpgradeSO
   upgradeName: Rebis
-  description: Cos Tam
+  description: 
   cost: 50
   type: 0
   value: 10
   recipeReward: {fileID: 11400000, guid: 6817e2e134f7ce941b0843928bd9e6e1, type: 2}
+  machineToUnlock: 0

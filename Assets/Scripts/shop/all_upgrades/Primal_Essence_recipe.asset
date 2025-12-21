@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Primal_Essence_recipe
   m_EditorClassIdentifier: Assembly-CSharp::ShopUpgradeSO
   upgradeName: Primal Essence
-  description: Cos Tam
+  description: 
   cost: 50
   type: 0
   value: 10
   recipeReward: {fileID: 11400000, guid: 573cb4329f1fd1c49b9d362452bb97e3, type: 2}
+  machineToUnlock: 0

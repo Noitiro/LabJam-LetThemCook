@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Essence_of_Salt_recipe
   m_EditorClassIdentifier: Assembly-CSharp::ShopUpgradeSO
   upgradeName: 'Essence of Salt '
-  description: Cos Tam
+  description: 
   cost: 50
   type: 0
   value: 10
   recipeReward: {fileID: 11400000, guid: 776a69c7d96109e4c905103b4e3391b9, type: 2}
+  machineToUnlock: 0

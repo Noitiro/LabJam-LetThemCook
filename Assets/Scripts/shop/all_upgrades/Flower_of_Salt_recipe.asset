@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Flower_of_Salt_recipe
   m_EditorClassIdentifier: Assembly-CSharp::ShopUpgradeSO
   upgradeName: Flower of Salt
-  description: Cos Tam
+  description: 
   cost: 50
   type: 0
   value: 10
   recipeReward: {fileID: 11400000, guid: d0d91e1a9d55e394b89c2a775730de4c, type: 2}
+  machineToUnlock: 0

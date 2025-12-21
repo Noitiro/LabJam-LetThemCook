@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Azoth_recipe
   m_EditorClassIdentifier: Assembly-CSharp::ShopUpgradeSO
   upgradeName: Azoth
-  description: Cos Tam
+  description: 
   cost: 50
   type: 0
   value: 10
   recipeReward: {fileID: 11400000, guid: e52dc6cb2ef4a9145806846212ad86b8, type: 2}
+  machineToUnlock: 0

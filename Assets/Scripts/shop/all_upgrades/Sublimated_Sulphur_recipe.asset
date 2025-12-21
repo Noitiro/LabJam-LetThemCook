@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Sublimated_Sulphur_recipe
   m_EditorClassIdentifier: Assembly-CSharp::ShopUpgradeSO
   upgradeName: Sublimated Sulphur
-  description: Cos Tam
+  description: 
   cost: 50
   type: 0
   value: 10
   recipeReward: {fileID: 11400000, guid: cf47f3c9b0f179740ae9ce0c83ea9975, type: 2}
+  machineToUnlock: 0

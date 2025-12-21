@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Green_Vitriol_recipe
   m_EditorClassIdentifier: Assembly-CSharp::ShopUpgradeSO
   upgradeName: Green Vitriol
-  description: Cos Tam
+  description: 
   cost: 50
   type: 0
   value: 10
   recipeReward: {fileID: 11400000, guid: 1c1c29dc22a29ff43b9fa7c342da359d, type: 2}
+  machineToUnlock: 0

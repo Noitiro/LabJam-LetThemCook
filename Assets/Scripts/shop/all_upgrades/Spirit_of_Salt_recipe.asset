@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Spirit_of_Salt_recipe
   m_EditorClassIdentifier: Assembly-CSharp::ShopUpgradeSO
   upgradeName: Spirit of Salt
-  description: Cos Tam
+  description: 
   cost: 50
   type: 0
   value: 10
   recipeReward: {fileID: 11400000, guid: 577aa959e165fd146b7a56e3c6fe2dfc, type: 2}
+  machineToUnlock: 0

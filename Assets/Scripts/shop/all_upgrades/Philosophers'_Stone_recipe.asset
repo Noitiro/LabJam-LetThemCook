@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Philosophers'_Stone_recipe
   m_EditorClassIdentifier: Assembly-CSharp::ShopUpgradeSO
   upgradeName: Philosophers' Stone
-  description: Cos Tam
+  description: 
   cost: 50
   type: 0
   value: 10
   recipeReward: {fileID: 11400000, guid: b475718d8bdabe84692301b3c98b3467, type: 2}
+  machineToUnlock: 0

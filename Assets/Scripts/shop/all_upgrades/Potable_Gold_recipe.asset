@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Potable_Gold_recipe
   m_EditorClassIdentifier: Assembly-CSharp::ShopUpgradeSO
   upgradeName: Potable Gold
-  description: Cos Tam
+  description: 
   cost: 50
   type: 0
   value: 10
   recipeReward: {fileID: 11400000, guid: 24c12970bf0dd874d82f97a23f959f92, type: 2}
+  machineToUnlock: 0

@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Virgin's_Milk_recipe
   m_EditorClassIdentifier: Assembly-CSharp::ShopUpgradeSO
   upgradeName: Virgin's Milk
-  description: Cos Tam
+  description: 
   cost: 50
   type: 0
   value: 10
   recipeReward: {fileID: 11400000, guid: 53b9d6bc0840eed438fb317cd67290f8, type: 2}
+  machineToUnlock: 0

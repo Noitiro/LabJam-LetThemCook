@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Essence_of_Sulphur_recipe
   m_EditorClassIdentifier: Assembly-CSharp::ShopUpgradeSO
   upgradeName: Essence_of_Sulphur
-  description: Cos Tam
+  description: 
   cost: 50
   type: 0
   value: 10
   recipeReward: {fileID: 11400000, guid: 4ebbeedf00ae1cb4e85a23bb94f04a5c, type: 2}
+  machineToUnlock: 0

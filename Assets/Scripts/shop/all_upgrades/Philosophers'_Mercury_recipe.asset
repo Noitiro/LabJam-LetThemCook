@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Philosophers'_Mercury_recipe
   m_EditorClassIdentifier: Assembly-CSharp::ShopUpgradeSO
   upgradeName: Philosophers' Mercury
-  description: Cos Tam
+  description: 
   cost: 50
   type: 0
   value: 10
   recipeReward: {fileID: 11400000, guid: 179f9b427bc640d43b10ea72cbd88449, type: 2}
+  machineToUnlock: 0

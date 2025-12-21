@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Royal_Water_recipe
   m_EditorClassIdentifier: Assembly-CSharp::ShopUpgradeSO
   upgradeName: Royal Water
-  description: Cos Tam
+  description: 
   cost: 50
   type: 0
   value: 10
   recipeReward: {fileID: 11400000, guid: e6acd443547cb6b43bc63f8d63b69bb9, type: 2}
+  machineToUnlock: 0

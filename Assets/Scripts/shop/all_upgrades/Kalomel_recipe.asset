@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Kalomel_recipe
   m_EditorClassIdentifier: Assembly-CSharp::ShopUpgradeSO
   upgradeName: Kalomel
-  description: Cos Tam
+  description: 
   cost: 50
   type: 0
   value: 10
   recipeReward: {fileID: 11400000, guid: c200dfceea5451846b7d047e7460d93c, type: 2}
+  machineToUnlock: 0

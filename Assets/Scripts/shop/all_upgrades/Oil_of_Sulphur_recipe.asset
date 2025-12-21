@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Oil_of_Sulphur_recipe
   m_EditorClassIdentifier: Assembly-CSharp::ShopUpgradeSO
   upgradeName: Oil of Sulphur
-  description: Cos Tam
+  description: 
   cost: 50
   type: 0
   value: 10
   recipeReward: {fileID: 11400000, guid: 7990449470616124c8084bbf5b6b5be9, type: 2}
+  machineToUnlock: 0
