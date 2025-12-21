@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 using System.Collections.Generic;
 
 public class AudioManager : MonoBehaviour
@@ -19,16 +20,44 @@ public class AudioManager : MonoBehaviour
 
     public void Play(string name)
     {
-        Debug.Log("Looking for " + name);
         foreach(GameObject x in SoundSources)
         {
-            Debug.Log("Is " + name + " same as " + x.name);
             if (x.name == name)
             {
-                Debug.Log("Play coins");
                 AudioSource source = x.GetComponent<AudioSource>();
                 source.Play(0);
             }
         }
+    }
+
+    public void FadeOut(string name)
+    {
+        foreach (GameObject x in SoundSources)
+        {
+            if (x.name == name)
+            {
+                AudioSource source = x.GetComponent<AudioSource>();
+                StartCoroutine(AudioFadeOut.FadeOut(source, 0.5f));
+            }
+        }
+    }
+}
+
+public static class AudioFadeOut
+{
+
+    public static IEnumerator FadeOut(AudioSource audioSource, float FadeTime)
+    {
+        float startVolume = audioSource.volume;
+
+        while (audioSource.volume > 0)
+        {
+            audioSource.volume -= startVolume * Time.deltaTime / FadeTime;
+
+            yield return null;
+        }
+
+        audioSource.Stop();
+        audioSource.volume = startVolume;
     }
 }
