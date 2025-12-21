@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: philosophical_sulphur
   m_EditorClassIdentifier: Assembly-CSharp::RecipeSO
   recipeName: Philosophical Sulphur
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 999ee3d5bd8e28747bf67970c86ad5e4, type: 3}
   Ingredients: 0a0000000d000000
   Instrument: 0
   Potion: 16

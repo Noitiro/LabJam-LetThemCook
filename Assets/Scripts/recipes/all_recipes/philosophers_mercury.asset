@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: philosophers_mercury
   m_EditorClassIdentifier: Assembly-CSharp::RecipeSO
   recipeName: Philosophers' Mercury
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: c49bf5aafb6ff2345a8d7dd0589f56ed, type: 3}
   Ingredients: 0e0000000d000000
   Instrument: 0
   Potion: 17
