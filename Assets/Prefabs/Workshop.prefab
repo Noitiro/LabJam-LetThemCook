@@ -3068,7 +3068,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2952b847c8da6d744936c55838b09af1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::OwnedRecipeList
-  Searcher: {fileID: 0}
+  Searcher: {fileID: 7374389899045128858}
   TextField: {fileID: 8836964827529729107, guid: b0ab7da327f7ba54db5191de5464450a, type: 3}
   BaseRecipe: {fileID: 11400000, guid: cf47f3c9b0f179740ae9ce0c83ea9975, type: 2}
 --- !u!1 &4819320846539459207
