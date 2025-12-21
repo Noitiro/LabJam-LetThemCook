@@ -37,7 +37,7 @@ public class AudioManager : MonoBehaviour
             if (x.name == name)
             {
                 AudioSource source = x.GetComponent<AudioSource>();
-                StartCoroutine(AudioFadeOut.FadeOut(source, 0.5f));
+                StartCoroutine(AudioFadeOut.FadeOut(source, 0.8f));
             }
         }
     }
