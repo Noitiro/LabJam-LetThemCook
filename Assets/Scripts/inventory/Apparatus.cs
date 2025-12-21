@@ -1,11 +1,12 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 
 public class Apparatus : MonoBehaviour
 {
     public string name = "Alembic";
-    public int workTime = 10;
+    public double workTime = 10.0;
     public AudioManager Audio;
 
     public List<GameObject> apparatusInputSlots = new List<GameObject>();
@@ -17,6 +18,8 @@ public class Apparatus : MonoBehaviour
     List<ItemSlot> inputItemSlots = new List<ItemSlot>();
     ItemSlot outputItemSlot = null;
 
+    GameObject clock;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -26,6 +29,10 @@ public class Apparatus : MonoBehaviour
         }
 
         outputItemSlot = apparatusOutputSlot.GetComponent<ItemSlot>();
+
+
+        clock = transform.Find("Clock").gameObject;
+        clock.GetComponent<Image>().fillAmount = 0.0f;
     }
 
     // Update is called once per frame
@@ -35,7 +42,9 @@ public class Apparatus : MonoBehaviour
         {
             workTimer -= Time.deltaTime;
 
-            if(workTimer <= 0)
+            clock.GetComponent<Image>().fillAmount = (float)(workTime / workTime);
+
+            if (workTimer <= 0)
             {
                 ClearAll();
             }
