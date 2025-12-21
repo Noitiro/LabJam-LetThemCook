@@ -16,4 +16,4 @@ MonoBehaviour:
   requestDescription: Agent for transformation nedeed. It needs to be of male energy.
   requiredPotion: {fileID: 11400000, guid: fbf4bbc7f37eb4d4ea909531b5755781, type: 2}
   goldReward: 1010
-  timeLimit: 30
+  timeLimit: 200

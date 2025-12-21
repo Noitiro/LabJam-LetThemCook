@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class QuestManager : MonoBehaviour
 {
@@ -8,15 +9,19 @@ public class QuestManager : MonoBehaviour
 
     [SerializeField] private Transform cardsContainer;
     [SerializeField] private GameObject questCardPrefab;
-    [SerializeField] private TextMeshProUGUI activeTimerText;
     [SerializeField] private List<GuildQuestSO> allQuests;
+    [SerializeField] private TextMeshProUGUI activeTimerText;
     [SerializeField] private TextMeshProUGUI currentQuestNameText;
-    [SerializeField] private GameObject cancelQuestButton;
+
+    [SerializeField] private GameObject actionButton;
+    [SerializeField] private TextMeshProUGUI actionButtonText; 
 
     [SerializeField] private OwnedRecipeList RecipeList;
 
     public GuildQuestSO currentActiveQuest;
     private float timeRemaining;
+
+    private bool isReadyToFinish = false;
 
     private void Awake()
     {
@@ -27,7 +32,7 @@ public class QuestManager : MonoBehaviour
     private void Start()
     {
         if (activeTimerText != null) activeTimerText.gameObject.SetActive(false);
-        if (cancelQuestButton != null) cancelQuestButton.gameObject.SetActive(false);
+        if (actionButton != null) actionButton.gameObject.SetActive(false);
         UpdateQuestHUD();
     }
 
@@ -38,9 +43,9 @@ public class QuestManager : MonoBehaviour
 
     private void Update()
     {
-        if (currentActiveQuest != null)
+        if (currentActiveQuest != null && !isReadyToFinish)
         {
-            timeRemaining -= Time.deltaTime; 
+            timeRemaining -= Time.deltaTime;
             if (activeTimerText != null)
             {
                 activeTimerText.text = timeRemaining.ToString("F1") + "s";
@@ -52,132 +57,152 @@ public class QuestManager : MonoBehaviour
         }
     }
 
-    public void GenerateCards()
-    {
-        foreach (Transform child in cardsContainer)
-        {
-            Destroy(child.gameObject);
-        }
-        if (currentActiveQuest != null)
-        {
-            Debug.Log("aktywne zadanie");
-            return;
-        }
-
-        List<GuildQuestSO> deck = new List<GuildQuestSO>(allQuests);
-        int cardsToDraw = Mathf.Min(8, deck.Count);
-
-        // Trzeba zagwarantowaæ, ¿e przynajmniej czêœæ zadañ bêdzie mo¿liwa do wykonania, zmienna percent pokazuje jaka to iloœæ
-        // Mo¿na by próbowaæ generowaæ te¿ procent zadañ, które mog¹ byæ wykonane po zakupie recept, ale komplikuje to sprawê
-        // Maybe TODO in future
-        float percent = 0.5f;
-        int sureCards = (int)Mathf.Min(cardsToDraw * percent, RecipeList.RecipeList.Count);
-        int restCards = cardsToDraw - sureCards;
-
-        Debug.Log(sureCards.ToString());
-
-        //Stare zwyk³e randomowe generowanie
-        /*for (int i = 0; i < cardsToDraw; i++)
-        {
-            int randomIndex = Random.Range(0, deck.Count);
-            GuildQuestSO drawnQuest = deck[randomIndex];
-            deck.RemoveAt(randomIndex);
-
-            GameObject cardObj = Instantiate(questCardPrefab, cardsContainer);
-            cardObj.GetComponent<QuestCardUI>().Setup(drawnQuest, this);
-        }*/
-
-        //Generowanie zadañ gwarantowanych
-        for (int i = 0; i < sureCards; i++)
-        {
-            int randomIndex;
-            GuildQuestSO drawnQuest;
-
-            while (true)
-            {
-                randomIndex = Random.Range(0, deck.Count);
-                drawnQuest = deck[randomIndex];
-
-                if (RecipeList.IsRecipeOwned(drawnQuest.requiredPotion)) break;
-            }
-
-            deck.RemoveAt(randomIndex);
-
-            GameObject cardObj = Instantiate(questCardPrefab, cardsContainer);
-            cardObj.GetComponent<QuestCardUI>().Setup(drawnQuest, this);
-        }
-
-        //Generowanie reszty zadañ
-        for (int i = 0; i < restCards; i++)
-        {
-            int randomIndex = Random.Range(0, deck.Count);
-            GuildQuestSO drawnQuest = deck[randomIndex];
-            deck.RemoveAt(randomIndex);
-
-            GameObject cardObj = Instantiate(questCardPrefab, cardsContainer);
-            cardObj.GetComponent<QuestCardUI>().Setup(drawnQuest, this);
-        }
-    }
-    public void AbandonQuest()
+    public void Teges()
     {
         if (currentActiveQuest == null) return;
 
-        Debug.Log(" anulowano zadanie");
-
-        FailQuest();
+        if (isReadyToFinish)
+        {
+            FinishQuestSuccess();
+        }
+        else
+        {
+            Debug.Log("Gracz anulowa³ zadanie.");
+            FailQuest();
+        }
     }
+
     public void AcceptQuest(GuildQuestSO quest)
     {
         if (currentActiveQuest != null) return;
+
         currentActiveQuest = quest;
         timeRemaining = quest.timeLimit;
+
+        isReadyToFinish = false;
+
+        if (actionButtonText != null) actionButtonText.text = "Cancel";
+
         UpdateQuestHUD();
-        Debug.Log(quest.requiredPotion.recipeName);
+        Debug.Log($"Przyjêto: {quest.requiredPotion.recipeName}");
+
         if (activeTimerText != null) activeTimerText.gameObject.SetActive(true);
-        foreach (Transform child in cardsContainer)
-        {
-            Destroy(child.gameObject);
-        }
+        if (actionButton != null) actionButton.SetActive(true);
+
+        foreach (Transform child in cardsContainer) Destroy(child.gameObject);
+
     }
-    private void FailQuest()
-    {
-        currentActiveQuest = null;
-        if (activeTimerText != null) activeTimerText.gameObject.SetActive(false);
-        GenerateCards();
-    }
+
     public void CheckQuestCompletion(RecipeSO craftedPotion)
     {
         if (currentActiveQuest == null) return;
 
+        if (isReadyToFinish) return;
+
         if (currentActiveQuest.requiredPotion == craftedPotion)
         {
-            Debug.Log("ZADANIE UKOCZONE");
-            if (MoneyManager.Instance != null)
-            {
-                MoneyManager.Instance.AddGold(currentActiveQuest.goldReward);
-            }
-
-            currentActiveQuest = null;
-            GenerateCards();
+            isReadyToFinish = true;
+            if (actionButtonText != null) actionButtonText.text = "Finish";
             UpdateQuestHUD();
-            if (activeTimerText != null) activeTimerText.gameObject.SetActive(false);
         }
         else
         {
-            Debug.Log("nie ta mikstura");
+            Debug.Log("Nie ts kurwa");
         }
     }
+
+    private void FinishQuestSuccess()
+    {
+        Debug.Log("ZADANIE UKOÑCZONE");
+
+        if (MoneyManager.Instance != null)
+        {
+            MoneyManager.Instance.AddGold(currentActiveQuest.goldReward);
+        }
+
+        ResetQuestState();
+    }
+
+    private void FailQuest()
+    {
+        Debug.Log("Zadanie nieudane lub anulowane.");
+        ResetQuestState();
+    }
+
+    private void ResetQuestState()
+    {
+        currentActiveQuest = null;
+        isReadyToFinish = false;
+
+        if (activeTimerText != null) activeTimerText.gameObject.SetActive(false);
+        if (actionButton != null) actionButton.SetActive(false);
+
+        GenerateCards();
+        UpdateQuestHUD();
+    }
+
     private void UpdateQuestHUD()
     {
         if (currentQuestNameText == null) return;
 
         if (currentActiveQuest != null)
         {
-            currentQuestNameText.text = $"Current Order: {currentActiveQuest.requiredPotion.recipeName}";
+            if (isReadyToFinish)
+                currentQuestNameText.text = $"Ready to deliver: {currentActiveQuest.requiredPotion.recipeName}";
+            else
+                currentQuestNameText.text = $"Current Order: {currentActiveQuest.requiredPotion.recipeName}";
         }
         else
         {
             currentQuestNameText.text = "Visit the Guild for new quests";
+        }
+    }
+
+    public void GenerateCards()
+    {
+        foreach (Transform child in cardsContainer) Destroy(child.gameObject);
+        if (currentActiveQuest != null) return;
+
+        List<GuildQuestSO> deck = new List<GuildQuestSO>(allQuests);
+        int cardsToDraw = Mathf.Min(8, deck.Count);
+
+        float percent = 0.5f;
+        int sureCards = (int)Mathf.Min(cardsToDraw * percent, RecipeList.RecipeList.Count);
+        int restCards = cardsToDraw - sureCards;
+
+        for (int i = 0; i < sureCards; i++)
+        {
+            int randomIndex;
+            GuildQuestSO drawnQuest;
+
+            if (deck.Count == 0) break;
+
+            int safeCounter = 0;
+            while (true)
+            {
+                randomIndex = Random.Range(0, deck.Count);
+                drawnQuest = deck[randomIndex];
+
+                if (RecipeList.IsRecipeOwned(drawnQuest.requiredPotion)) break;
+
+                safeCounter++;
+                if (safeCounter > 50) break;
+            }
+
+            deck.RemoveAt(randomIndex);
+            GameObject cardObj = Instantiate(questCardPrefab, cardsContainer);
+            cardObj.GetComponent<QuestCardUI>().Setup(drawnQuest, this);
+        }
+        for (int i = 0; i < restCards; i++)
+        {
+            if (deck.Count == 0) break;
+
+            int randomIndex = Random.Range(0, deck.Count);
+            GuildQuestSO drawnQuest = deck[randomIndex];
+            deck.RemoveAt(randomIndex);
+
+            GameObject cardObj = Instantiate(questCardPrefab, cardsContainer);
+            cardObj.GetComponent<QuestCardUI>().Setup(drawnQuest, this);
         }
     }
 }

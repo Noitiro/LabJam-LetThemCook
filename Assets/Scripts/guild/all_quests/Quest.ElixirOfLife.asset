@@ -17,4 +17,4 @@ MonoBehaviour:
     my whole fortune.
   requiredPotion: {fileID: 11400000, guid: a4a6199c915d13e4298188fd48e29642, type: 2}
   goldReward: 11230
-  timeLimit: 30
+  timeLimit: 1100

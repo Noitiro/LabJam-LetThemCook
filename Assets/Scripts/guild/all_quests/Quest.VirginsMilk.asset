@@ -16,4 +16,4 @@ MonoBehaviour:
   requestDescription: Will buy catalyst for White Stone multiplication.
   requiredPotion: {fileID: 11400000, guid: 53b9d6bc0840eed438fb317cd67290f8, type: 2}
   goldReward: 1600
-  timeLimit: 30
+  timeLimit: 280
