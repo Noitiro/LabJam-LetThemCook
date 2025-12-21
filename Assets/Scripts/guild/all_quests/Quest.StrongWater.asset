@@ -16,4 +16,4 @@ MonoBehaviour:
   requestDescription: Will pay for creation of base reagent.
   requiredPotion: {fileID: 11400000, guid: ba3ddee3ea5b24b498d7ee590ca37599, type: 2}
   goldReward: 410
-  timeLimit: 30
+  timeLimit: 100

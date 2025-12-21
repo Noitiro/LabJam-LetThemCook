@@ -16,4 +16,4 @@ MonoBehaviour:
   requestDescription: I need green type of vitriol. Need to be pure quality.
   requiredPotion: {fileID: 11400000, guid: 1c1c29dc22a29ff43b9fa7c342da359d, type: 2}
   goldReward: 200
-  timeLimit: 30
+  timeLimit: 80

@@ -18,4 +18,4 @@ MonoBehaviour:
     elixir.
   requiredPotion: {fileID: 11400000, guid: 71fc19d7ccfd9ab48abfcc5f51003400, type: 2}
   goldReward: 3270
-  timeLimit: 30
+  timeLimit: 80

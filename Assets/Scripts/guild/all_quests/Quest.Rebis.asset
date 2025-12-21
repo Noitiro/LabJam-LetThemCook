@@ -17,4 +17,4 @@ MonoBehaviour:
     of them without delay!
   requiredPotion: {fileID: 11400000, guid: 6817e2e134f7ce941b0843928bd9e6e1, type: 2}
   goldReward: 2380
-  timeLimit: 30
+  timeLimit: 410

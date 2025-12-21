@@ -16,4 +16,4 @@ MonoBehaviour:
   requestDescription: Flux for refining of magical silver needed. Will pay handsomely.
   requiredPotion: {fileID: 11400000, guid: 656ee54fb3b301d4aa5b70df0a2f3760, type: 2}
   goldReward: 70
-  timeLimit: 30
+  timeLimit: 15

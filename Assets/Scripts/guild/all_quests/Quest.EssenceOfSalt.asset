@@ -17,4 +17,4 @@ MonoBehaviour:
     summoning, so quality is utmost importance.
   requiredPotion: {fileID: 11400000, guid: 776a69c7d96109e4c905103b4e3391b9, type: 2}
   goldReward: 370
-  timeLimit: 30
+  timeLimit: 110

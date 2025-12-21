@@ -29,7 +29,7 @@ public class QuestCardUI : MonoBehaviour
         if (potionName != null && data.requiredPotion != null)
             potionName.text = data.requiredPotion.recipeName;
         if (timeText != null)
-            timeText.text = data.timeLimit.ToString() + "s";
+            timeText.text = data.timeLimit.ToString() + " s";
     }
 
     public void OnClick()

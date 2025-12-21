@@ -16,4 +16,4 @@ MonoBehaviour:
   requestDescription: Local plague doctor is in need of medical powders.
   requiredPotion: {fileID: 11400000, guid: d0d91e1a9d55e394b89c2a775730de4c, type: 2}
   goldReward: 60
-  timeLimit: 30
+  timeLimit: 15

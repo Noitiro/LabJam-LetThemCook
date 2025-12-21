@@ -17,4 +17,4 @@ MonoBehaviour:
     used in swords and other weapons.
   requiredPotion: {fileID: 11400000, guid: 179f9b427bc640d43b10ea72cbd88449, type: 2}
   goldReward: 940
-  timeLimit: 30
+  timeLimit: 160
