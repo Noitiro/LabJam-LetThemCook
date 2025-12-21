@@ -5612,6 +5612,7 @@ GameObject:
   - component: {fileID: 1126824638643667714}
   - component: {fileID: 6807538272647307940}
   - component: {fileID: 6807538272647307941}
+  - component: {fileID: 6807538272647307942}
   m_Layer: 5
   m_Name: Shelf
   m_TagString: Untagged
@@ -6326,6 +6327,19 @@ MonoBehaviour:
   m_Spacing: {x: 80, y: 60}
   m_Constraint: 1
   m_ConstraintCount: 3
+--- !u!114 &6807538272647307942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6315277668447188989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a4b8ff3fdbc1fe4eb7f84c9328dca5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ShelfListIngredients
+  shelfIngredientsList: 
 --- !u!1 &6814481421684276587
 GameObject:
   m_ObjectHideFlags: 0
