@@ -721,6 +721,16 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5d79c0a580cf024da699107afa39aed, type: 3}
+--- !u!1 &226200721376654039 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8103853453335423793, guid: d5d79c0a580cf024da699107afa39aed, type: 3}
+  m_PrefabInstance: {fileID: 226200721376654038}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &226200721376654040 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1786609967993792016, guid: d5d79c0a580cf024da699107afa39aed, type: 3}
+  m_PrefabInstance: {fileID: 226200721376654038}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &464717793178531334 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 418462160408589018, guid: 60841e333edf2c24b94bf23a99f96f33, type: 3}
@@ -741,6 +751,8 @@ MonoBehaviour:
   Workshop: {fileID: 4234977120662700117}
   Shop: {fileID: 6942990116265498843}
   Guild: {fileID: 8049062417308789026}
+  OpenScrollButton: {fileID: 226200721376654040}
+  CloseScrollButton: {fileID: 226200721376654039}
 --- !u!1 &1191053595239883488
 GameObject:
   m_ObjectHideFlags: 0
