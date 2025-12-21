@@ -72,6 +72,8 @@ public class QuestManager : MonoBehaviour
         int sureCards = (int)Mathf.Min(cardsToDraw * percent, RecipeList.RecipeList.Count);
         int restCards = cardsToDraw - sureCards;
 
+        Debug.Log(sureCards.ToString());
+
         //Stare zwyk³e randomowe generowanie
         /*for (int i = 0; i < cardsToDraw; i++)
         {
@@ -90,14 +92,19 @@ public class QuestManager : MonoBehaviour
             GuildQuestSO drawnQuest;
 
             Debug.Log("===Start looking for guaranteed quest===");
-            string log;
+            string log = "";
             while (true)
             {
                 randomIndex = Random.Range(0, deck.Count);
                 drawnQuest = deck[randomIndex];
 
+                log += "Is recipe on the list? : " + drawnQuest.requiredPotion.recipeName + "\n";
+
                 if (RecipeList.IsRecipeOwned(drawnQuest.requiredPotion)) break;
             }
+
+            log += "Recipe is on the list";
+            Debug.Log(log);
 
             deck.RemoveAt(randomIndex);
 

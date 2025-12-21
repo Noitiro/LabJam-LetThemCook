@@ -6,6 +6,7 @@ using System.Collections.Generic;
 public class OwnedRecipeList : MonoBehaviour
 {
     public RecipeSearcher Searcher;
+    public QuestManager Menager;
     public TextMeshProUGUI TextField;
 
     public RecipeSO BaseRecipe;
@@ -16,6 +17,7 @@ public class OwnedRecipeList : MonoBehaviour
     void Start()
     {
         AddRecipe(BaseRecipe);
+        Menager.GenerateCards();
     }
 
     // Update is called once per frame
