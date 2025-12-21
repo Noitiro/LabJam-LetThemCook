@@ -37,7 +37,6 @@ public class Apparatus : MonoBehaviour
 
             if(workTimer <= 0)
             {
-                //Praca skonczona, ogarnij, zagraj dzwiek etc
                 ClearAll();
             }
         }
