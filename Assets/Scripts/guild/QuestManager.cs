@@ -108,6 +108,9 @@ public class QuestManager : MonoBehaviour
             if (activeTimerText != null) activeTimerText.gameObject.SetActive(false);
 
             if (actionButtonText != null) actionButtonText.text = "Finish";
+
+            Audio.Play("QuestDone");
+
             UpdateQuestHUD();
         }
         else
