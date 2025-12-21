@@ -1,4 +1,6 @@
 using UnityEngine;
+using UnityEngine.UI;
+
 public class LoadPanel : MonoBehaviour
 {
     [SerializeField] GameObject Workshop;
