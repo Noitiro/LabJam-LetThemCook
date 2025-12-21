@@ -88,6 +88,10 @@ public class ShopManager : MonoBehaviour
             case UpgradeType.MachineUnlock:
                 UnlockMachine(upgrade.machineToUnlock);
                 break;
+
+            case UpgradeType.CookingSpeed:
+                ApplySpeedBoost(upgrade.value);
+                break;
         }
     }
     private void UnlockMachine(AlchemyEnums.Instruments machineType)
@@ -109,5 +113,16 @@ public class ShopManager : MonoBehaviour
                 Debug.Log("Odblokowano Athanor!");
                 break;
         }
+    }
+    private void ApplySpeedBoost(float amount)
+    {
+        if (athanorObject != null)
+            athanorObject.GetComponent<AddingIngredients>().ReduceCookingTime(amount);
+
+        if (alembicObject != null)
+            alembicObject.GetComponent<AddingIngredients>().ReduceCookingTime(amount);
+
+        if (mortarObject != null)
+            mortarObject.GetComponent<AddingIngredients>().ReduceCookingTime(amount);
     }
 }

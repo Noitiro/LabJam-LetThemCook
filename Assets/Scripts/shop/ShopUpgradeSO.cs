@@ -3,7 +3,8 @@ using UnityEngine;
 public enum UpgradeType
 {
     RecipeUnlock,
-    MachineUnlock
+    MachineUnlock,
+    CookingSpeed
 }
 [CreateAssetMenu(fileName = "New Upgrade", menuName = "Upgrade Card")]
 public class ShopUpgradeSO : ScriptableObject

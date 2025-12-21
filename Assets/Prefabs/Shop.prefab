@@ -219,6 +219,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 99d556fe0c75cf841affd9a848218eec, type: 2}
   - {fileID: 11400000, guid: 2c3f2f8c16cdf1d4bbf34ca56e7f495c, type: 2}
   - {fileID: 11400000, guid: 229608384070dee4cb26215356d7ac25, type: 2}
+  - {fileID: 11400000, guid: 077d1d6eddfb04f46ba66b56c3260e9f, type: 2}
+  - {fileID: 11400000, guid: 97b547939d5cd434a96f743041904cbd, type: 2}
+  - {fileID: 11400000, guid: 3e00d8b3f42cfaa4fb5511abde1ae72d, type: 2}
   athanorObject: {fileID: 0}
   alembicObject: {fileID: 0}
   mortarObject: {fileID: 0}
