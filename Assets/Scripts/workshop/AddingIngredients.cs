@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class AddingIngredients : MonoBehaviour {
     [SerializeField] SelectedIngredients selectedIngredients;
     [SerializeField] RecipeSearcher recipeSearcher;
+    [SerializeField] ListIngedients listIngedients;
 
     [SerializeField] AlchemyEnums.Instruments instrumentName;
 
@@ -64,8 +65,8 @@ public class AddingIngredients : MonoBehaviour {
 
     public void create() {
         recipeSearcher.ReturnRecipe(instrumentName, ingredientsList);
+        Instantiate(listIngedients.test(recipeSearcher.ReturnRecipe(instrumentName, ingredientsList)), finalSlot.transform);
         clearIngredients();
-        Instantiate(prefabSulphur, finalSlot.transform);
     }
 
     public void clearIngredients() {
