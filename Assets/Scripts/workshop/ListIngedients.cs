@@ -5,14 +5,11 @@ public class ListIngedients : MonoBehaviour {
     [SerializeField] private List<GameObject> allIngridientsPrefab;
 
     public GameObject test(AlchemyEnums.Ingredients? nameIngredients) {
-
-        switch (nameIngredients) {
-            case AlchemyEnums.Ingredients.SublimatedSulphur:
-                Debug.Log(allIngridientsPrefab[0].name);
-                Debug.Log(nameIngredients.Value.ToString() + " xddd");
-                return allIngridientsPrefab[0];
-            default:
-                return allIngridientsPrefab[1];
+        for (int i = 0; i < allIngridientsPrefab.Count; i++) {
+            if(allIngridientsPrefab[i].name.Equals(nameIngredients.Value.ToString())) {
+                return allIngridientsPrefab[i];
+            }
         }
+        return null;
     }
 }
