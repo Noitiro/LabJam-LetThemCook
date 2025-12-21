@@ -11,6 +11,7 @@ public class QuestManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI activeTimerText;
     [SerializeField] private List<GuildQuestSO> allQuests;
     [SerializeField] private TextMeshProUGUI currentQuestNameText;
+    [SerializeField] private GameObject cancelQuestButton;
 
     [SerializeField] private OwnedRecipeList RecipeList;
 
@@ -26,6 +27,7 @@ public class QuestManager : MonoBehaviour
     private void Start()
     {
         if (activeTimerText != null) activeTimerText.gameObject.SetActive(false);
+        if (cancelQuestButton != null) cancelQuestButton.gameObject.SetActive(false);
         UpdateQuestHUD();
     }
 
@@ -116,7 +118,14 @@ public class QuestManager : MonoBehaviour
             cardObj.GetComponent<QuestCardUI>().Setup(drawnQuest, this);
         }
     }
+    public void AbandonQuest()
+    {
+        if (currentActiveQuest == null) return;
 
+        Debug.Log(" anulowano zadanie");
+
+        FailQuest();
+    }
     public void AcceptQuest(GuildQuestSO quest)
     {
         if (currentActiveQuest != null) return;
