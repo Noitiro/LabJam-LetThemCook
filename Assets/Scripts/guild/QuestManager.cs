@@ -64,6 +64,7 @@ public class QuestManager : MonoBehaviour
         if (isReadyToFinish)
         {
             FinishQuestSuccess();
+
         }
         else
         {
@@ -102,6 +103,8 @@ public class QuestManager : MonoBehaviour
         if (currentActiveQuest.requiredPotion == craftedPotion)
         {
             isReadyToFinish = true;
+            if (activeTimerText != null) activeTimerText.gameObject.SetActive(false);
+
             if (actionButtonText != null) actionButtonText.text = "Finish";
             UpdateQuestHUD();
         }
@@ -133,6 +136,7 @@ public class QuestManager : MonoBehaviour
     {
         currentActiveQuest = null;
         isReadyToFinish = false;
+        timeRemaining = 0;
 
         if (activeTimerText != null) activeTimerText.gameObject.SetActive(false);
         if (actionButton != null) actionButton.SetActive(false);
