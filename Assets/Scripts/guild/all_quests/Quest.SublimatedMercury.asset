@@ -16,4 +16,4 @@ MonoBehaviour:
   requestDescription: In need of workers doing basic mercury sublimation.
   requiredPotion: {fileID: 11400000, guid: c2fd61e22886e394f8ea599635a04a76, type: 2}
   goldReward: 45
-  timeLimit: 30
+  timeLimit: 15

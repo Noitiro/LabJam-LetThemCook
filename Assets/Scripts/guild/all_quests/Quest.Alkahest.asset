@@ -17,4 +17,4 @@ MonoBehaviour:
     Will pay handsomely.
   requiredPotion: {fileID: 11400000, guid: 96d0733961a1bc8458739394dfca4ce1, type: 2}
   goldReward: 7780
-  timeLimit: 30
+  timeLimit: 740

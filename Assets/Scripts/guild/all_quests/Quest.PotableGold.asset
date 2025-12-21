@@ -17,4 +17,4 @@ MonoBehaviour:
     will pay any cost for assistance.
   requiredPotion: {fileID: 11400000, guid: 24c12970bf0dd874d82f97a23f959f92, type: 2}
   goldReward: 6200
-  timeLimit: 30
+  timeLimit: 430

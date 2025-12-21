@@ -17,4 +17,4 @@ MonoBehaviour:
     made from gold.
   requiredPotion: {fileID: 11400000, guid: e6acd443547cb6b43bc63f8d63b69bb9, type: 2}
   goldReward: 1040
-  timeLimit: 30
+  timeLimit: 230

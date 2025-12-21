@@ -16,4 +16,4 @@ MonoBehaviour:
   requestDescription: Purified sulphur needed for experiments.
   requiredPotion: {fileID: 11400000, guid: cf47f3c9b0f179740ae9ce0c83ea9975, type: 2}
   goldReward: 40
-  timeLimit: 30
+  timeLimit: 15

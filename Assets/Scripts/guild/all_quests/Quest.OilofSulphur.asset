@@ -103,4 +103,4 @@ MonoBehaviour:
 '
   requiredPotion: {fileID: 11400000, guid: 0523b4a20261e714c8402b0c31e545b0, type: 2}
   goldReward: 280
-  timeLimit: 30
+  timeLimit: 90

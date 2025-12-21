@@ -16,4 +16,4 @@ MonoBehaviour:
   requestDescription: Looking for solution to constipation. Help needed fast!
   requiredPotion: {fileID: 11400000, guid: c200dfceea5451846b7d047e7460d93c, type: 2}
   goldReward: 240
-  timeLimit: 30
+  timeLimit: 50
