@@ -14,9 +14,8 @@ public class QuestManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI currentQuestNameText;
 
     [SerializeField] private GameObject actionButton;
-    [SerializeField] private TextMeshProUGUI actionButtonText;
+    [SerializeField] private TextMeshProUGUI actionButtonText; 
 
-    [SerializeField] private AddingIngredients addingIngredients;
     [SerializeField] private OwnedRecipeList RecipeList;
 
     public GuildQuestSO currentActiveQuest;
@@ -65,13 +64,12 @@ public class QuestManager : MonoBehaviour
         if (isReadyToFinish)
         {
             FinishQuestSuccess();
-            addingIngredients.finishTask();
+
         }
         else
         {
             Debug.Log("Gracz anulowa³ zadanie.");
             FailQuest();
-            addingIngredients.finishTask();
         }
     }
 
@@ -105,6 +103,8 @@ public class QuestManager : MonoBehaviour
         if (currentActiveQuest.requiredPotion == craftedPotion)
         {
             isReadyToFinish = true;
+            if (activeTimerText != null) activeTimerText.gameObject.SetActive(false);
+
             if (actionButtonText != null) actionButtonText.text = "Finish";
             UpdateQuestHUD();
         }
@@ -136,6 +136,7 @@ public class QuestManager : MonoBehaviour
     {
         currentActiveQuest = null;
         isReadyToFinish = false;
+        timeRemaining = 0;
 
         if (activeTimerText != null) activeTimerText.gameObject.SetActive(false);
         if (actionButton != null) actionButton.SetActive(false);
