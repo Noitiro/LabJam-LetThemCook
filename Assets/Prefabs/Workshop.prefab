@@ -1372,6 +1372,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AddingIngredients
   selectedIngredients: {fileID: 316809648913889550}
   recipeSearcher: {fileID: 7374389899045128858}
+  listIngedients: {fileID: 0}
   instrumentName: 2
   prefabSalt: {fileID: 8499557346003809048, guid: f87b7a7de104fa24e8e6620178f4f435, type: 3}
   prefabMercury: {fileID: 1287641751586122006, guid: c2735b7f06f9dcb43a58188c3499cde0, type: 3}
@@ -1379,6 +1380,7 @@ MonoBehaviour:
   itemSlot: {fileID: 8076497798733223136}
   itemSlot1: {fileID: 3493697810321491132}
   itemSlot3: {fileID: 3018764208378831377}
+  finalSlot: {fileID: 0}
   ingredientsList: 
 --- !u!1 &2112301370173437809
 GameObject:
@@ -2340,6 +2342,7 @@ GameObject:
   - component: {fileID: 4518256202192044106}
   - component: {fileID: 316809648913889550}
   - component: {fileID: 7374389899045128858}
+  - component: {fileID: 1811804385042945626}
   m_Layer: 5
   m_Name: Workshop
   m_TagString: Untagged
@@ -2462,6 +2465,21 @@ MonoBehaviour:
   - {fileID: 11400000, guid: cf47f3c9b0f179740ae9ce0c83ea9975, type: 2}
   - {fileID: 11400000, guid: 53b9d6bc0840eed438fb317cd67290f8, type: 2}
   - {fileID: 11400000, guid: d3b40e9a335cdfa4484e226df89ca706, type: 2}
+--- !u!114 &1811804385042945626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3531371860623289747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e32390ce74c9371489c7cccbf1c029e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ListIngedients
+  allIngridientsPrefab:
+  - {fileID: 8495096109828921356, guid: 0e44bf539a5866e489cf08cf083e99b6, type: 3}
+  - {fileID: 8499557346003809048, guid: f87b7a7de104fa24e8e6620178f4f435, type: 3}
 --- !u!1 &3756831493775885516
 GameObject:
   m_ObjectHideFlags: 0
@@ -3249,6 +3267,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AddingIngredients
   selectedIngredients: {fileID: 316809648913889550}
   recipeSearcher: {fileID: 7374389899045128858}
+  listIngedients: {fileID: 0}
   instrumentName: 0
   prefabSalt: {fileID: 8499557346003809048, guid: f87b7a7de104fa24e8e6620178f4f435, type: 3}
   prefabMercury: {fileID: 1287641751586122006, guid: c2735b7f06f9dcb43a58188c3499cde0, type: 3}
@@ -3256,6 +3275,7 @@ MonoBehaviour:
   itemSlot: {fileID: 2768939057811283210}
   itemSlot1: {fileID: 8036007629040062583}
   itemSlot3: {fileID: 3181092484853422086}
+  finalSlot: {fileID: 0}
   ingredientsList: 
 --- !u!1 &5199269913760718818
 GameObject:
@@ -3607,6 +3627,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AddingIngredients
   selectedIngredients: {fileID: 316809648913889550}
   recipeSearcher: {fileID: 7374389899045128858}
+  listIngedients: {fileID: 0}
   instrumentName: 1
   prefabSalt: {fileID: 8499557346003809048, guid: f87b7a7de104fa24e8e6620178f4f435, type: 3}
   prefabMercury: {fileID: 1287641751586122006, guid: c2735b7f06f9dcb43a58188c3499cde0, type: 3}
@@ -3614,6 +3635,7 @@ MonoBehaviour:
   itemSlot: {fileID: 5780927269092076770}
   itemSlot1: {fileID: 343254436663004157}
   itemSlot3: {fileID: 927046048136374326}
+  finalSlot: {fileID: 0}
   ingredientsList: 
 --- !u!1 &5780927269092076770
 GameObject:
