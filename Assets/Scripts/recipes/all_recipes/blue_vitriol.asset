@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: blue_vitriol
   m_EditorClassIdentifier: Assembly-CSharp::RecipeSO
   recipeName: Blue Vitriol
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: cf60cb706668bfc418d93067e870235d, type: 3}
   Ingredients: 0500000004000000
   Instrument: 2
   Potion: 9

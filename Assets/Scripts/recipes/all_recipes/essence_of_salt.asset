@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: essence_of_salt
   m_EditorClassIdentifier: Assembly-CSharp::RecipeSO
   recipeName: Essence of Salt
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: b0b7f32079d590548bbadce75202154a, type: 3}
   Ingredients: 0b000000
   Instrument: 1
   Potion: 12
