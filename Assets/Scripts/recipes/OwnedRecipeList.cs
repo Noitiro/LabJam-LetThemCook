@@ -32,6 +32,7 @@ public class OwnedRecipeList : MonoBehaviour
 
         string WriteRecipe = NewRecipe.recipeName + " = ";
 
+        if (NewRecipe.Ingredients != null)
         for (int i = 0; i < NewRecipe.Ingredients.Count; i++)
         {
             AlchemyEnums.Ingredients Ingredient = NewRecipe.Ingredients[i];

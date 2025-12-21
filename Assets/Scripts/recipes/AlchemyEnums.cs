@@ -32,7 +32,9 @@ public class AlchemyEnums
         PotableGold,
         Quintessence,
         ElixirOfLife,
-        Alkahest
+        Alkahest,
+
+        Null
     }
     public enum Instruments
     {

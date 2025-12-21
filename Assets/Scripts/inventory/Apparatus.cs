@@ -6,8 +6,11 @@ using UnityEngine.UI;
 public class Apparatus : MonoBehaviour
 {
     public string name = "Alembic";
-    public double workTime = 10.0;
+    public AlchemyEnums.Instruments ApparatusType;
+
+    public double workTime = 5.0;
     public AudioManager Audio;
+    public RecipeSearcher Searcher;
 
     public List<GameObject> apparatusInputSlots = new List<GameObject>();
     public GameObject apparatusOutputSlot = null;
@@ -33,6 +36,21 @@ public class Apparatus : MonoBehaviour
 
         clock = transform.Find("Clock").gameObject;
         clock.GetComponent<Image>().fillAmount = 0.0f;
+
+        switch(name)
+        {
+            case "Alembic":
+                ApparatusType = AlchemyEnums.Instruments.Alembic;
+                break;
+
+            case "Mortar nad Pestle":
+                ApparatusType = AlchemyEnums.Instruments.Mortar;
+                break;
+
+            case "Athanor":
+                ApparatusType = AlchemyEnums.Instruments.Athanor;
+                break;
+        }
     }
 
     // Update is called once per frame
@@ -42,10 +60,33 @@ public class Apparatus : MonoBehaviour
         {
             workTimer -= Time.deltaTime;
 
-            clock.GetComponent<Image>().fillAmount = (float)(workTime / workTime);
+            clock.GetComponent<Image>().fillAmount = (float)(workTimer / workTime);
 
             if (workTimer <= 0)
             {
+                //AlchemyEnums.Ingredients? ReturnRecipe(AlchemyEnums.Instruments InstrumentType, List<AlchemyEnums.Ingredients> Ingredients)
+
+                List<AlchemyEnums.Ingredients> Ingredients = new List<AlchemyEnums.Ingredients>();
+
+                foreach (ItemSlot slot in inputItemSlots)
+                {
+                    if (slot.itemInSlot != AlchemyEnums.Ingredients.Null) Ingredients.Add(slot.itemInSlot);
+                }
+
+                AlchemyEnums.Ingredients OutputRecipe = Searcher.ReturnRecipe(ApparatusType, Ingredients);
+
+                Debug.Log(OutputRecipe.ToString());
+
+                if (OutputRecipe != AlchemyEnums.Ingredients.Null)
+                {
+                    RecipeSO ItemRecipe = Searcher.ReturnIngredientRecipe(OutputRecipe);
+
+                    outputItemSlot.itemInSlot = OutputRecipe;
+                    outputItemSlot.itemImage = ItemRecipe.icon;
+                    outputItemSlot.button.GetComponent<Image>().sprite = ItemRecipe.icon;
+                }
+
+                clock.GetComponent<Image>().fillAmount = 0.0f;
                 ClearAll();
             }
         }
@@ -57,7 +98,7 @@ public class Apparatus : MonoBehaviour
 
         foreach (ItemSlot slot in inputItemSlots)
         {
-            if (slot.itemInSlot != null)
+            if (slot.itemInSlot != AlchemyEnums.Ingredients.Null)
             {
                 isEmpty = false;
                 break;
@@ -84,5 +125,11 @@ public class Apparatus : MonoBehaviour
 
         if (isWorking) isWorking = false;
         Audio.FadeOut(name);
+    }
+
+    public void ReduceCookingTime(float amount)
+    {
+        workTime -= amount;
+        if (workTime < 0.5f) workTime = 0.5f;
     }
 }
