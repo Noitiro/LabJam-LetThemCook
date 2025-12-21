@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: elixir_of_life
   m_EditorClassIdentifier: Assembly-CSharp::RecipeSO
   recipeName: Elixir of Life
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 1269c071f51cc904692f1dd72dd3a067, type: 3}
   Ingredients: 160000000f00000019000000
   Instrument: 0
   Potion: 26
