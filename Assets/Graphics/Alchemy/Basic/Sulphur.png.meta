@@ -5,9 +5,6 @@ TextureImporter:
   - first:
       213: -2511831960796934284
     second: Sulphur_0
-  - first:
-      213: -2075670802241428830
-    second: Sulphur_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -40,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -49,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -78,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -119,10 +116,10 @@ TextureImporter:
       name: Sulphur_0
       rect:
         serializedVersion: 2
-        x: 195
-        y: 434
-        width: 16
-        height: 16
+        x: 23
+        y: 27
+        width: 724
+        height: 529
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,33 +134,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Sulphur_1
-      rect:
-        serializedVersion: 2
-        x: 255
-        y: 359
-        width: 730
-        height: 520
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2a2efb9176cb133e0800000000000000
-      internalID: -2075670802241428830
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -174,7 +149,6 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       Sulphur_0: -2511831960796934284
-      Sulphur_1: -2075670802241428830
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

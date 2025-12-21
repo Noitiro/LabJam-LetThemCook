@@ -5,12 +5,6 @@ TextureImporter:
   - first:
       213: -4362391421924641277
     second: Sulphur_Highlight_0
-  - first:
-      213: -6842715400012915256
-    second: Sulphur_Highlight_1
-  - first:
-      213: 1058287708924396057
-    second: Sulphur_Highlight_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -43,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -52,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -81,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -122,10 +116,10 @@ TextureImporter:
       name: Sulphur_Highlight_0
       rect:
         serializedVersion: 2
-        x: 169
-        y: 423
-        width: 16
-        height: 16
+        x: 3
+        y: 21
+        width: 766
+        height: 542
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,55 +134,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Sulphur_Highlight_1
-      rect:
-        serializedVersion: 2
-        x: 195
-        y: 434
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8cd9223199ac901a0800000000000000
-      internalID: -6842715400012915256
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sulphur_Highlight_2
-      rect:
-        serializedVersion: 2
-        x: 238
-        y: 344
-        width: 766
-        height: 542
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 912c990701bcfae00800000000000000
-      internalID: 1058287708924396057
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -199,8 +149,6 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       Sulphur_Highlight_0: -4362391421924641277
-      Sulphur_Highlight_1: -6842715400012915256
-      Sulphur_Highlight_2: 1058287708924396057
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
