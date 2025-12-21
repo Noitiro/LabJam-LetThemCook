@@ -1,6 +1,11 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 public class AddingIngredients : MonoBehaviour {
+    [Header("Time Cook")]
+    [SerializeField] float time;
+
     [SerializeField] SelectedIngredients selectedIngredients;
     [SerializeField] RecipeSearcher recipeSearcher;
     [SerializeField] ListIngedients listIngedients;
@@ -22,6 +27,8 @@ public class AddingIngredients : MonoBehaviour {
     bool itemSlotEmpty = true;
     bool itemSlotEmpty1 = true;
     bool itemSlotEmpty2 = true;
+
+    bool itemFinalSlotEmpty = true;
 
     public void putIngredients () {
         switch (selectedIngredients.selectIng) {
@@ -59,10 +66,23 @@ public class AddingIngredients : MonoBehaviour {
         }
     }
 
-    public void create() {
+    private IEnumerator LetThemCook(float time) {
+        yield return new WaitForSeconds(time);
         recipeSearcher.ReturnRecipe(instrumentName, ingredientsList);
         Instantiate(listIngedients.test(recipeSearcher.ReturnRecipe(instrumentName, ingredientsList)), finalSlot.transform);
+        itemFinalSlotEmpty = false;
         clearIngredients();
+    }
+
+    public void create() {
+        StartCoroutine(LetThemCook(time));
+    }
+
+    public void finishTask() {
+        if (itemFinalSlotEmpty == false) {
+            Destroy(finalSlot.transform.GetChild(0).gameObject);
+            itemFinalSlotEmpty = true;
+        }
     }
 
     public void clearIngredients() {

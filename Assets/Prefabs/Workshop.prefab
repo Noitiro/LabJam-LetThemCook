@@ -119,6 +119,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e1e53fa692d7e445a9713422f1bc628, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AddingIngredients
+  time: 0
   selectedIngredients: {fileID: 6108718765835164447}
   recipeSearcher: {fileID: 8150549961874663558}
   listIngedients: {fileID: 0}
@@ -625,6 +626,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e1e53fa692d7e445a9713422f1bc628, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AddingIngredients
+  time: 5
   selectedIngredients: {fileID: 6108718765835164447}
   recipeSearcher: {fileID: 8150549961874663558}
   listIngedients: {fileID: 2378001451085474404}
@@ -1378,6 +1380,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e1e53fa692d7e445a9713422f1bc628, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AddingIngredients
+  time: 0
   selectedIngredients: {fileID: 6108718765835164447}
   recipeSearcher: {fileID: 8150549961874663558}
   listIngedients: {fileID: 0}
