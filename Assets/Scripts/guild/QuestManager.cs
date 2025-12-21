@@ -18,6 +18,8 @@ public class QuestManager : MonoBehaviour
 
     [SerializeField] private OwnedRecipeList RecipeList;
 
+    [SerializeField] private AudioManager Audio;
+
     public GuildQuestSO currentActiveQuest;
     private float timeRemaining;
 
@@ -121,6 +123,8 @@ public class QuestManager : MonoBehaviour
         if (MoneyManager.Instance != null)
         {
             MoneyManager.Instance.AddGold(currentActiveQuest.goldReward);
+
+            Audio.Play("Coins");
         }
 
         ResetQuestState();
