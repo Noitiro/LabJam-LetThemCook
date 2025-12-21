@@ -377,14 +377,6 @@ PrefabInstance:
       propertyPath: listIngedients
       value: 
       objectReference: {fileID: 6210328249475319463}
-    - target: {fileID: 1811804385042945626, guid: d5d79c0a580cf024da699107afa39aed, type: 3}
-      propertyPath: allIngridientsPrefab.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1811804385042945626, guid: d5d79c0a580cf024da699107afa39aed, type: 3}
-      propertyPath: 'allIngridientsPrefab.Array.data[2]'
-      value: 
-      objectReference: {fileID: 8499557346003809048, guid: f87b7a7de104fa24e8e6620178f4f435, type: 3}
     - target: {fileID: 1858630656488929677, guid: d5d79c0a580cf024da699107afa39aed, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

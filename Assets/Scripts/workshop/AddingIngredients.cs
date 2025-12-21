@@ -1,9 +1,5 @@
-using NUnit.Framework;
 using System.Collections.Generic;
-using Unity.VisualScripting;
-using UnityEditor.UIElements;
 using UnityEngine;
-using UnityEngine.UI;
 public class AddingIngredients : MonoBehaviour {
     [SerializeField] SelectedIngredients selectedIngredients;
     [SerializeField] RecipeSearcher recipeSearcher;
