@@ -11,6 +11,7 @@ public class AddingIngredients : MonoBehaviour {
     [SerializeField] ListIngedients listIngedients;
 
     [SerializeField] AlchemyEnums.Instruments instrumentName;
+    [SerializeField] AlchemyEnums.Ingredients? finalItem;
 
     [SerializeField] GameObject prefabSalt;
     [SerializeField] GameObject prefabMercury;
@@ -68,10 +69,19 @@ public class AddingIngredients : MonoBehaviour {
 
     private IEnumerator LetThemCook(float time) {
         yield return new WaitForSeconds(time);
-        recipeSearcher.ReturnRecipe(instrumentName, ingredientsList);
-        Instantiate(listIngedients.test(recipeSearcher.ReturnRecipe(instrumentName, ingredientsList)), finalSlot.transform);
-        itemFinalSlotEmpty = false;
-        clearIngredients();
+        
+        if (itemFinalSlotEmpty) {
+            finalItem = recipeSearcher.ReturnRecipe(instrumentName, ingredientsList);
+            Instantiate(listIngedients.test(finalItem), finalSlot.transform);
+            itemFinalSlotEmpty = false;
+            clearIngredients();
+        }
+    }
+
+    public void selectItem() {
+        if (itemFinalSlotEmpty == false) {
+            selectedIngredients.selectIng = finalItem;
+        }
     }
 
     public void create() {
