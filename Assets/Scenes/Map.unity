@@ -1333,7 +1333,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 4226095862096503526}
+    m_TransformParent: {fileID: 537927235723473547}
     m_Modifications:
     - target: {fileID: 3678350986804125377, guid: e875e6636f34889418a892140a75cabb, type: 3}
       propertyPath: m_Name
@@ -1433,15 +1433,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8555208869702791014, guid: e875e6636f34889418a892140a75cabb, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8555208869702791014, guid: e875e6636f34889418a892140a75cabb, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8555208869702791014, guid: e875e6636f34889418a892140a75cabb, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8555208869702791014, guid: e875e6636f34889418a892140a75cabb, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -1573,6 +1573,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4198803063010057184, guid: 1276ef6b181a7ad458ca0ee2c586cf75, type: 3}
+      propertyPath: Inventory
+      value: 
+      objectReference: {fileID: 1218431745}
     - target: {fileID: 7664464464195616996, guid: 1276ef6b181a7ad458ca0ee2c586cf75, type: 3}
       propertyPath: m_Name
       value: In1
@@ -1680,6 +1684,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4198803063010057184, guid: 1276ef6b181a7ad458ca0ee2c586cf75, type: 3}
+      propertyPath: Inventory
+      value: 
+      objectReference: {fileID: 1218431745}
     - target: {fileID: 7664464464195616996, guid: 1276ef6b181a7ad458ca0ee2c586cf75, type: 3}
       propertyPath: m_Name
       value: In2
@@ -1699,6 +1707,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7664464464195616996, guid: 1276ef6b181a7ad458ca0ee2c586cf75, type: 3}
   m_PrefabInstance: {fileID: 1186166190}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1218431745 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2286529145743413737, guid: 80881a8a64a2e6a4582139d49e686830, type: 3}
+  m_PrefabInstance: {fileID: 667919528}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6b4526f423d266498eed43c595d98fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InventorySystem
 --- !u!1 &1346610869
 GameObject:
   m_ObjectHideFlags: 0
@@ -2057,6 +2076,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4198803063010057184, guid: 1276ef6b181a7ad458ca0ee2c586cf75, type: 3}
+      propertyPath: Inventory
+      value: 
+      objectReference: {fileID: 1218431745}
     - target: {fileID: 7664464464195616996, guid: 1276ef6b181a7ad458ca0ee2c586cf75, type: 3}
       propertyPath: m_Name
       value: Out
@@ -2167,6 +2190,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: AudioManager
       objectReference: {fileID: 0}
+    - target: {fileID: 2054567775425812078, guid: 10033115dd70b75419f280881cfcd1cb, type: 3}
+      propertyPath: SoundSources.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2054567775425812078, guid: 10033115dd70b75419f280881cfcd1cb, type: 3}
+      propertyPath: 'SoundSources.Array.data[0]'
+      value: 
+      objectReference: {fileID: 684510444}
+    - target: {fileID: 2054567775425812078, guid: 10033115dd70b75419f280881cfcd1cb, type: 3}
+      propertyPath: 'SoundSources.Array.data[1]'
+      value: 
+      objectReference: {fileID: 1431092481}
+    - target: {fileID: 2054567775425812078, guid: 10033115dd70b75419f280881cfcd1cb, type: 3}
+      propertyPath: 'SoundSources.Array.data[2]'
+      value: 
+      objectReference: {fileID: 778660555}
+    - target: {fileID: 2054567775425812078, guid: 10033115dd70b75419f280881cfcd1cb, type: 3}
+      propertyPath: 'SoundSources.Array.data[3]'
+      value: 
+      objectReference: {fileID: 2098048198}
+    - target: {fileID: 2054567775425812078, guid: 10033115dd70b75419f280881cfcd1cb, type: 3}
+      propertyPath: 'SoundSources.Array.data[4]'
+      value: 
+      objectReference: {fileID: 97457730}
     - target: {fileID: 3509214000519663211, guid: 10033115dd70b75419f280881cfcd1cb, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2371,6 +2418,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4198803063010057184, guid: 1276ef6b181a7ad458ca0ee2c586cf75, type: 3}
+      propertyPath: Inventory
+      value: 
+      objectReference: {fileID: 1218431745}
     - target: {fileID: 7664464464195616996, guid: 1276ef6b181a7ad458ca0ee2c586cf75, type: 3}
       propertyPath: m_Name
       value: In3
@@ -2700,6 +2751,7 @@ RectTransform:
   - {fileID: 3985152258039604137}
   - {fileID: 5276085267198215261}
   - {fileID: 3227238327230979838}
+  - {fileID: 814676122}
   - {fileID: 6964486803298385624}
   m_Father: {fileID: 4226095862096503526}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5456,7 +5508,6 @@ RectTransform:
   - {fileID: 8545707165642229747}
   - {fileID: 464717793178531334}
   - {fileID: 8247799297750245198}
-  - {fileID: 814676122}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
