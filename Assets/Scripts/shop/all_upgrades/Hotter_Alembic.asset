@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1a79e79fe23e8a94f81056e9a6c680f3, type: 3}
-  m_Name: Mortar_upgrade
+  m_Name: Hotter_Alembic
   m_EditorClassIdentifier: Assembly-CSharp::ShopUpgradeSO
-  upgradeName: Mortar
-  description: Buy Mortar
+  upgradeName: Better Alembic
+  description: Reduces cooking time by 1 second.
   cost: 50
-  type: 1
-  value: 0
+  type: 2
+  value: 1
   recipeReward: {fileID: 0}
-  machineToUnlock: 2
+  machineToUnlock: 1

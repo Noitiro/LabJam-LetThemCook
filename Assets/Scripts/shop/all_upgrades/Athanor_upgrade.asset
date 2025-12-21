@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ShopUpgradeSO
   upgradeName: Atanor
   description: Buy Atanor
-  cost: 0
+  cost: 50
   type: 1
   value: 0
   recipeReward: {fileID: 0}
