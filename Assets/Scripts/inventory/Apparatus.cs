@@ -75,8 +75,6 @@ public class Apparatus : MonoBehaviour
 
                 AlchemyEnums.Ingredients OutputRecipe = Searcher.ReturnRecipe(ApparatusType, Ingredients);
 
-                Debug.Log(OutputRecipe.ToString());
-
                 if (OutputRecipe != AlchemyEnums.Ingredients.Null)
                 {
                     RecipeSO ItemRecipe = Searcher.ReturnIngredientRecipe(OutputRecipe);
