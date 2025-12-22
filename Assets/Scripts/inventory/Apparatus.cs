@@ -84,10 +84,17 @@ public class Apparatus : MonoBehaviour
                     //outputItemSlot.button.GetComponent<Image>().sprite = ItemRecipe.icon;
 
                     //Tutaj wypluwam gotow¹ substancjê
-                    outputItemSlot.SetItem(OutputRecipe, ItemRecipe.icon);
+                    outputItemSlot.SetItem(OutputRecipe, ItemRecipe.icon, ItemRecipe.recipeName);
                 }
 
                 clock.GetComponent<Image>().fillAmount = 0.0f;
+
+                foreach (ItemSlot slot in inputItemSlots)
+                {
+                    slot.isDisabled = false;
+                }
+                outputItemSlot.isDisabled = false;
+
                 ClearInputs();
             }
         }
@@ -108,6 +115,12 @@ public class Apparatus : MonoBehaviour
 
         if(!isEmpty)
         {
+            foreach (ItemSlot slot in inputItemSlots)
+            {
+                slot.isDisabled = true;
+            }
+            outputItemSlot.isDisabled = true;
+
             workTimer = workTime;
             isWorking = true;
 
@@ -126,11 +139,19 @@ public class Apparatus : MonoBehaviour
     {
         foreach (ItemSlot slot in inputItemSlots)
         {
+            slot.isDisabled = false;
+        }
+        outputItemSlot.isDisabled = false;
+
+        foreach (ItemSlot slot in inputItemSlots)
+        {
             slot.ClearSlot();
         }
 
         if (isWorking) isWorking = false;
         Audio.FadeOut(name);
+
+        clock.GetComponent<Image>().fillAmount = 0.0f;
     }
 
     public void ReduceCookingTime(float amount)

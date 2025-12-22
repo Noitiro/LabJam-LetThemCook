@@ -41,6 +41,23 @@ public class RecipeSearcher : MonoBehaviour
                 InputIngredients.Sort();
                 RecipeIngredients.Sort();
 
+                if (recipe.recipeName == "Blue Vitriol")
+                {
+                    Debug.Log("Found Blue Vitriol");
+
+                    Debug.Log(" Inputs: ");
+                    foreach (AlchemyEnums.Ingredients x in InputIngredients)
+                    {
+                        Debug.Log(x.ToString());
+                    }
+
+                    Debug.Log(" Recipe: ");
+                    foreach (AlchemyEnums.Ingredients x in RecipeIngredients)
+                    {
+                        Debug.Log(x.ToString());
+                    }
+                }
+
                 if (InputIngredients.SequenceEqual(RecipeIngredients))
                 {
                     if (QuestManager.Instance != null)

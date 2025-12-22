@@ -15,6 +15,8 @@ public class ItemSlot : MonoBehaviour
     public int source = 0;
     public bool isOutput = false;
 
+    public bool isDisabled = false;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -50,33 +52,38 @@ public class ItemSlot : MonoBehaviour
 
     public void ClickSlot()
     {
-        if (itemInSlot == AlchemyEnums.Ingredients.Null)
+        if(!isDisabled)
         {
-            Debug.Log("Dropping item");
-            Inventory.dropItem(this);
-        }
-        else
-        {
-            Debug.Log("Picking up item");
-            Inventory.pickItem(this);
+            if (itemInSlot == AlchemyEnums.Ingredients.Null)
+            {
+                Debug.Log("Dropping item");
+                Inventory.dropItem(this);
+            }
+            else
+            {
+                Debug.Log("Picking up item");
+                Inventory.pickItem(this);
+            }
         }
     }
 
     public void ClearSlot()
     {
-        if (!isSource)
+        if (!isSource && !isDisabled)
         {
             button.GetComponent<Image>().sprite = null;
             itemInSlot = AlchemyEnums.Ingredients.Null;
             itemImage = null;
+            nameText.text = "";
         }
     }
 
-    public void SetItem(AlchemyEnums.Ingredients item, Sprite image)
+    public void SetItem(AlchemyEnums.Ingredients item, Sprite image, string name)
     {
         itemInSlot = item;
         itemImage = image;
         button.GetComponent<Image>().sprite = image;
+        nameText.text = name;
     }
 
     public void setTestItem()

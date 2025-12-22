@@ -16,5 +16,5 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: 68a37dbdc8b188f4e9ad84cfe339b428, type: 3}
   Ingredients: 0700000009000000
   Instrument: 1
-  Potion: 0
+  Potion: 13
   cookTime: 2

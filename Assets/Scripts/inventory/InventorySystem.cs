@@ -6,6 +6,7 @@ public class InventorySystem : MonoBehaviour
     AlchemyEnums.Ingredients pickedItem = AlchemyEnums.Ingredients.Null;
     Sprite pickedItemImage = null;
     ItemSlot startingSlot = null;
+    string pickedItemName = "";
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -30,6 +31,7 @@ public class InventorySystem : MonoBehaviour
             pickedItem = clickedSlot.itemInSlot;
             pickedItemImage = clickedSlot.itemImage;
             startingSlot = clickedSlot;
+            pickedItemName = clickedSlot.nameText.text;
 
             Debug.Log("Picked item");
 
@@ -47,6 +49,7 @@ public class InventorySystem : MonoBehaviour
             clickedSlot.itemInSlot = pickedItem;
             clickedSlot.itemImage = pickedItemImage;
             clickedSlot.button.GetComponent<Image>().sprite = pickedItemImage;
+            clickedSlot.nameText.text = pickedItemName;
 
             pickedItem = AlchemyEnums.Ingredients.Null;
             pickedItemImage = null;
