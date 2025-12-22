@@ -83,6 +83,7 @@ public class Apparatus : MonoBehaviour
                     //outputItemSlot.itemImage = ItemRecipe.icon;
                     //outputItemSlot.button.GetComponent<Image>().sprite = ItemRecipe.icon;
 
+                    //Tutaj wypluwam gotow¹ substancjê
                     outputItemSlot.SetItem(OutputRecipe, ItemRecipe.icon);
                 }
 
