@@ -2890,7 +2890,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 2851548717986332071, guid: 60841e333edf2c24b94bf23a99f96f33, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 418462160408589018, guid: 60841e333edf2c24b94bf23a99f96f33, type: 3}
       insertIndex: 3
@@ -2960,7 +2961,7 @@ MonoBehaviour:
   actionButton: {fileID: 140320541}
   actionButtonText: {fileID: 595736319}
   RecipeList: {fileID: 512044464849599918}
-  Audio: {fileID: 0}
+  Audio: {fileID: 1989927377}
   currentActiveQuest: {fileID: 0}
 --- !u!222 &5617715091383542386
 CanvasRenderer:
