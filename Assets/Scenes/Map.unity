@@ -473,6 +473,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4198803063010057184, guid: 1276ef6b181a7ad458ca0ee2c586cf75, type: 3}
+      propertyPath: Inventory
+      value: 
+      objectReference: {fileID: 1392806248}
     - target: {fileID: 4732041368201786098, guid: 1276ef6b181a7ad458ca0ee2c586cf75, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 3.899994
@@ -1462,6 +1466,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4198803063010057184, guid: 1276ef6b181a7ad458ca0ee2c586cf75, type: 3}
+      propertyPath: Inventory
+      value: 
+      objectReference: {fileID: 1392806248}
     - target: {fileID: 4732041368201786098, guid: 1276ef6b181a7ad458ca0ee2c586cf75, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 3.899994
@@ -1568,6 +1576,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4198803063010057184, guid: 1276ef6b181a7ad458ca0ee2c586cf75, type: 3}
+      propertyPath: Inventory
+      value: 
+      objectReference: {fileID: 1392806248}
     - target: {fileID: 4732041368201786098, guid: 1276ef6b181a7ad458ca0ee2c586cf75, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 3.899994
@@ -1812,7 +1824,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2054567775425812078, guid: 10033115dd70b75419f280881cfcd1cb, type: 3}
       propertyPath: SoundSources.Array.size
-      value: 5
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2054567775425812078, guid: 10033115dd70b75419f280881cfcd1cb, type: 3}
       propertyPath: 'SoundSources.Array.data[0]'
@@ -1832,6 +1844,18 @@ PrefabInstance:
       objectReference: {fileID: 2098048198}
     - target: {fileID: 2054567775425812078, guid: 10033115dd70b75419f280881cfcd1cb, type: 3}
       propertyPath: 'SoundSources.Array.data[4]'
+      value: 
+      objectReference: {fileID: 1483237865}
+    - target: {fileID: 2054567775425812078, guid: 10033115dd70b75419f280881cfcd1cb, type: 3}
+      propertyPath: 'SoundSources.Array.data[5]'
+      value: 
+      objectReference: {fileID: 1653092135}
+    - target: {fileID: 2054567775425812078, guid: 10033115dd70b75419f280881cfcd1cb, type: 3}
+      propertyPath: 'SoundSources.Array.data[6]'
+      value: 
+      objectReference: {fileID: 97457730}
+    - target: {fileID: 2054567775425812078, guid: 10033115dd70b75419f280881cfcd1cb, type: 3}
+      propertyPath: 'SoundSources.Array.data[7]'
       value: 
       objectReference: {fileID: 97457730}
     - target: {fileID: 3509214000519663211, guid: 10033115dd70b75419f280881cfcd1cb, type: 3}
@@ -3322,6 +3346,10 @@ PrefabInstance:
       propertyPath: Inventory
       value: 
       objectReference: {fileID: 1392806248}
+    - target: {fileID: 8145588449370667852, guid: d5d79c0a580cf024da699107afa39aed, type: 3}
+      propertyPath: 'RecipeList.Array.data[22]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 2ebddaafbc4c9fe4694bc42cc4e87848, type: 2}
     - target: {fileID: 9018087133286991270, guid: d5d79c0a580cf024da699107afa39aed, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

@@ -88,7 +88,7 @@ public class Apparatus : MonoBehaviour
                 }
 
                 clock.GetComponent<Image>().fillAmount = 0.0f;
-                ClearAll();
+                ClearInputs();
             }
         }
     }
@@ -117,12 +117,17 @@ public class Apparatus : MonoBehaviour
 
     public void ClearAll()
     {
+        ClearInputs();
+
+        outputItemSlot.ClearSlot();
+    }
+
+    public void ClearInputs()
+    {
         foreach (ItemSlot slot in inputItemSlots)
         {
             slot.ClearSlot();
         }
-
-        //outputItemSlot.ClearSlot();
 
         if (isWorking) isWorking = false;
         Audio.FadeOut(name);

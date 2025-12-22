@@ -41,21 +41,6 @@ public class RecipeSearcher : MonoBehaviour
                 InputIngredients.Sort();
                 RecipeIngredients.Sort();
 
-                Debug.Log("============");
-                Debug.Log("Input:");
-
-                foreach (AlchemyEnums.Ingredients x in InputIngredients)
-                {
-                    Debug.Log(x.ToString());
-                }
-
-                Debug.Log("Recipe:");
-
-                foreach (AlchemyEnums.Ingredients x in RecipeIngredients)
-                {
-                    Debug.Log(x.ToString());
-                }
-
                 if (InputIngredients.SequenceEqual(RecipeIngredients))
                 {
                     if (QuestManager.Instance != null)
